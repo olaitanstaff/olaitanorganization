@@ -1,8 +1,4 @@
-/*==================================
-* Author        : "ThemeSine"
-* Template Name : Zombiz
-* Version       : 1.0
-==================================== */
+
 
 /*==================================
 
@@ -645,6 +641,7 @@ html,body{
 	height: 100%;
 	z-index: -1;
 }
+
 /*-------------------------------------
 		6. Service
 --------------------------------------*/
@@ -2056,7 +2053,7 @@ a:active.learn-btn{
 	color:#908edf;
 	border:1px solid #908edf;
 }
-/*-blog button-*/\
+/*-blog button-*/
 
 /*pagination*/
 .pagination-part {

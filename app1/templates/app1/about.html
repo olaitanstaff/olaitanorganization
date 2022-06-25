@@ -6,13 +6,13 @@
 		<section class="about-part">
 			<div class="container">
 				<div class="about-part-details text-center"> 
-					<h2>about us</h2>
+					<h2>À Propos</h2>
 					<div class="about-part-content">
 						<div class="breadcrumbs">
 							<div class="container">
 								<ol class="breadcrumb">
-								  <li><a href="index.html">Accueil</a><span>//</span></li>
-								  <li><a href="about.html">À Propos</a></li>
+								  <li><a href="{% url 'app1:index'%}">Accueil</a><span>//</span></li>
+								  <li><a href="{% url 'app1:about'%}">À Propos</a></li>
 								</ol><!--/.breadcrumb-->
 							</div><!--/.container-->
 						</div><!--/.breadcrumbs-->
@@ -202,7 +202,7 @@
 							<div class="col-md-offset-1 col-md-5 col-sm-12">
 								<div class="single-about-history">
 									<div class="about-history-img">
-										<img src="{% static 'assets/images/about/ab2.jpg' %}" alt="about">
+										<img src="{% static 'assets/images/about/abt3.jpeg' %}" alt="about">
 									</div><!--/.about-history-img-->
 								</div><!--/.single-about-history-->
 							</div><!--/.col-->

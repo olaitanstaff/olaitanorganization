@@ -1,4 +1,8 @@
-
+/*==================================
+* Author        : "ThemeSine"
+* Template Name : Zombiz
+* Version       : 1.0
+==================================== */
 
 /*==================================
 
@@ -92,6 +96,7 @@ html,body{
   transition: opacity 0.3s 0.3s ease; 
   opacity: 0;
 }
+
 
 /*=============Style css=========*/
 
@@ -390,12 +395,12 @@ html,body{
 	 border: 1px solid #fff;
 }
 .single-slide-item.slide-1 {
-	background-image:url(../../assets/images/banner/banner1.jpg);
+	background-image:url("static/assets/images/banner/banner1.jpg");
 	position:relative;
 	z-index:1;
 }
 .single-slide-item.slide-2 {
-	background-image:url(../../assets/images/banner/banner2.jpg);
+	background-image:url("static/assets/images/banner/banner1.jpg");
 	position:relative;
 	z-index:1;
 }
@@ -641,7 +646,6 @@ html,body{
 	height: 100%;
 	z-index: -1;
 }
-
 /*-------------------------------------
 		6. Service
 --------------------------------------*/
@@ -2053,7 +2057,7 @@ a:active.learn-btn{
 	color:#908edf;
 	border:1px solid #908edf;
 }
-/*-blog button-*/
+/*-blog button-*/\
 
 /*pagination*/
 .pagination-part {

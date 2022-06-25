@@ -1,8 +1,3 @@
-/*==================================
-* Author        : "ThemeSine"
-* Template Name : Zombiz
-* Version       : 1.0
-==================================== */
 
 /*==================================
 
@@ -19,18 +14,19 @@ font-family: 'Lato', sans-serif;
 3.	Menu
 4.	Slider
 5. 	About
-6. 	Service
-7. 	Statistics
-8. 	Project
-9. 	Team
-10.	Pricing
-11.	Testimonial
-12. Client
-11.	Testemonial 
-14. Contact
-15. New-project
-16.	Footer
-17.	Footer Copyright
+6 . About Ceo
+7. 	Service
+8. 	Statistics
+9. 	Project
+10. 	Team
+11.	Pricing
+12.	Testimonial
+13. Client
+14.	Testemonial 
+15. Contact
+16. New-project
+17.	Footer
+18.	Footer Copyright
 
 ===========*/
 /*-------------------------------------
@@ -97,6 +93,7 @@ html,body{
   opacity: 0;
 }
 
+
 /*=============Style css=========*/
 
 /*-------------------------------------
@@ -108,7 +105,7 @@ html,body{
 } */
 
 .header{
-	padding-top:20px;
+	/* padding-top:20px;  */
 	padding-bottom: 12px;
 
 }
@@ -394,12 +391,12 @@ html,body{
 	 border: 1px solid #fff;
 }
 .single-slide-item.slide-1 {
-	background-image:url(../../assets/images/banner/banner1.jpg);
+	background-image:url("/static/assets/images/banner/banner1.jpg");
 	position:relative;
 	z-index:1;
 }
 .single-slide-item.slide-2 {
-	background-image:url(../../assets/images/banner/banner2.jpg);
+	background-image:url("/static/assets/images/banner/banner2.jpg");
 	position:relative;
 	z-index:1;
 }
@@ -608,7 +605,7 @@ html,body{
 /*-------------------------------------
 		5. About
 --------------------------------------*/
-.about-us{
+ .about-us{
 	background: #f9faff;
 	padding: 120px 0 175px;
 }
@@ -644,6 +641,66 @@ html,body{
 	width: 100%;
 	height: 100%;
 	z-index: -1;
+} 
+
+/*-------------------------------------
+		5. About Ceo
+--------------------------------------*/
+.about-ceo{
+	background: #f9faff;
+	padding: 120px 0 175px;
+}
+.about-ceo-txt{
+	margin-top: 5px;
+	padding-bottom: 20px;
+}
+.about-ceo h2 {
+	color:#4d4e54;	
+	font-size:30px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+}
+.about-ceo p{
+	color:#888;	
+	font-size:16px;
+	font-family: 'Poppins', sans-serif;
+	line-height:1.6;
+	/* max-width: 501px; */
+    margin-top: 28px;
+    margin-bottom: 6px;
+}
+.about-ceo-img  {
+	position: relative;
+	top: 45px;
+	box-shadow: 0 10px 30px rgba(112,134,230,.2);
+	z-index: 1;
+}
+.about-ceo-img img {
+	width: 100%;
+	height: 400px;
+}
+.about-ceo-img:before{
+	position: absolute;
+	content: " ";
+	top:55px;
+	left:-23px;
+	border: 3px solid #ebecfb;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+} 
+.single-about-ceo .social{
+	position: relative;
+	top: 60px;
+	width: 100%;
+    clear: both;
+    text-align: center;
+    display: inline-block;
+}
+.single-about-ceo .social i{
+  
+   font-size: 3rem;
+    margin: 0px 5px;
 }
 /*-------------------------------------
 		6. Service

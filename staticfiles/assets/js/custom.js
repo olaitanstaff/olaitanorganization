@@ -1,13 +1,6 @@
 $(document).ready(function(){
 	"use strict";
     
-        /*==================================
-* Author        : "ThemeSINE"
-* Template Name : Zombiz HTML Template
-* Version       : 1.0
-==================================== */
-
-
 
 
         /*=========== TABLE OF CONTENTS ===========

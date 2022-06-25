@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-kwba%$sa87m!*jcaoicbrp_dx-8jo@f$9*#*w(5ag66y!iwaec'
+SECRET_KEY = 'django-insecure-kwba%$sa87m!*jcaoicbrp_dx-8jo@f$9*#*w(5ag66y!iwaec'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    "whitenoise.runserver_nostatic",
     'django.contrib.staticfiles',
     'app1'
 ]
@@ -54,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    
 ]
 
 ROOT_URLCONF = 'olaitanorganization.urls'
@@ -123,13 +125,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = "/static/"
-MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+# MEDIA_URL = "/media/"
+# MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 STATICFILES_DIRS = [BASE_DIR / "static"]  
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles" 
+STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage" 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+# 
 # STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles" 
 # STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

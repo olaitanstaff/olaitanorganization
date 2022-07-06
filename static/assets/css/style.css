@@ -613,6 +613,7 @@ html,body{
 	background: #f9faff;
 	padding: 120px 0 175px;
 }
+
 .about-us-txt{
 	margin-top: 103px;
 	
@@ -651,61 +652,51 @@ html,body{
 /*-------------------------------------
 		5. About Ceo
 --------------------------------------*/
-.about-ceo{
-	background: #f9faff;
-	padding: 120px 0 175px;
+.container-ceo {
+	padding: 30px;
+	margin-right: 100px;
 }
-.about-ceo-txt{
-	margin-top: 5px;
-	padding-bottom: 20px;
-}
-.about-ceo h2 {
-	color:#4d4e54;	
-	font-size:30px;
-	font-family: 'Playfair Display', serif;
-	font-weight: 700;
-}
-.about-ceo p{
+
+.about-ceo-text p {
+	font-weight: 300;
 	color:#888;	
 	font-size:16px;
 	font-family: 'Poppins', sans-serif;
-	line-height:1.6;
-	/* max-width: 501px; */
-    margin-top: 28px;
-    margin-bottom: 6px;
+	line-height: 1.7;
+	
 }
-.about-ceo-img  {
-	position: relative;
-	top: 45px;
-	box-shadow: 0 10px 30px rgba(112,134,230,.2);
+.about-ceo-img {
+	width: 450px;
+	position:relative;
+	margin-bottom: 10px;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+	background-color: #fff;
+	/* margin-right: 200px; */
+}
+.about-ceo-img::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 8px solid #fff;
 	z-index: 1;
+	overflow:hidden;
+	box-sizing: border-box;
 }
 .about-ceo-img img {
 	width: 100%;
-	height: 400px;
+	height: auto;
+	border-radius: 8px;
 }
-.about-ceo-img:before{
-	position: absolute;
-	content: " ";
-	top:55px;
-	left:-23px;
-	border: 3px solid #ebecfb;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-} 
-.single-about-ceo .social{
-	position: relative;
-	top: 60px;
-	width: 100%;
-    clear: both;
-    text-align: center;
-    display: inline-block;
+.ceo-img {
+	float: left;
+	margin: 70px;
 }
-.single-about-ceo .social i{
-   font-size: 3rem;
-    margin: 0px 5px;
-}
+
 /*-------------------------------------
 		6. Service
 --------------------------------------*/

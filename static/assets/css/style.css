@@ -268,6 +268,10 @@ html,body{
 	padding-left: 27px;
 
 }
+.navbar-brand img{
+	height:45px;
+	width:100%
+}
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:active,
@@ -611,6 +615,7 @@ html,body{
 }
 .about-us-txt{
 	margin-top: 103px;
+	
 }
 .about-us h2 {
 	color:#4d4e54;	
@@ -698,7 +703,6 @@ html,body{
     display: inline-block;
 }
 .single-about-ceo .social i{
-  
    font-size: 3rem;
     margin: 0px 5px;
 }
@@ -714,7 +718,6 @@ html,body{
 .service-content-one{
 	margin-top: 42px;
 	margin-bottom: 60px;
-
 }
 
 .service-img img{
@@ -738,12 +741,12 @@ html,body{
 	font-family: 'Playfair Display', serif;
 	padding: 47px 0 25px;
 }
-.service-txt p {
+/* .service-txt p {
 	color:#756c6a;	
 	font-size:16px;
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.67;
-}
+} */
 a.service-btn,
 a:active.service-btn,
 a:hover.service-btn,
@@ -759,6 +762,56 @@ a:focus.service-btn{
 .service-single:hover{
 	box-shadow:0 5px 20px rgba(112,134,230,.2);
 	opacity: 1;
+}
+.aproache {
+	
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.aproache img  {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 50px;
+}
+.aproache h1  {
+	color:#44454f;	
+	font-size:34px;
+	text-align: center;
+	margin-top: 35px;
+	/* font-weight: bold; */
+}
+.single-service-offer {
+	display: flex;
+	margin-bottom: 24px;
+	margin-left: 100px;
+	margin-right: 100px;
+	/* width: 300px; */
+}
+.service-title h1 {
+	text-transform: capitalize;
+	font-size: 24px;
+	position: relative;
+	top: 20%;
+}
+
+.service-text-detail p{
+	font-size:16px;
+	font-family: 'Poppins', sans-serif;
+	line-height:1.67; 
+    margin-top: 28px;
+    margin-bottom: 6px;
+}
+.service-text-detail:nth-child(even) p{
+	margin-left: 10px; 
+	border-left: 4px solid #5549af;
+	padding-left: 10px; 
+}
+.service-text-detail:nth-child(odd) p{
+	margin-right: 10px;
+	border-right: 4px solid #5549af; 
+	padding-right: 10px;
 }
 
 /*-------------------------------------
@@ -807,7 +860,7 @@ a:focus.service-btn{
 /*-------------------------------------
 		8. Project
 --------------------------------------*/
-.project{
+/* .project{
 	padding: 117px 0 109px;
 }
 .project-details{
@@ -815,10 +868,10 @@ a:focus.service-btn{
 }
 .project-content {
     margin-top:62px;
-}
+} */
 
 /* project-header  */
-.project-header h2{
+/* .project-header h2{
 	color: #44454f;
 	font-size: 30px;
 	font-family: 'Playfair Display', serif;
@@ -830,7 +883,7 @@ a:focus.service-btn{
 	font-family: 'Poppins', sans-serif;
 	max-width:470px;
     margin-top: 32px;
-}
+} */
 /* project-header  */
 
 /* clear fix */
@@ -1884,8 +1937,10 @@ a:active.learn-btn{
 	padding: 115px 0 90px;
 }
 .about-history-img img {
+	position: relative;
     box-shadow: 0 0 20px rgba(112,134,230,.2);
-    height: 435px;
+    height: 400px;
+
 }
 .about-history-txt h2{
 	color:#4d4e54;
@@ -1910,11 +1965,29 @@ a:active.learn-btn{
 .about-vission-content {
     padding: 90px 0 0;
 }
-.main-timeline{
-    position: relative;
-    margin-top: 39px;
-    transition: all 0.4s ease 0s;
+.main-timeline {
+    /* position: relative;
+	/* height: 100vh; */
+	/* top: 50px;
+    margin-top: 0px; */
+    /* transition: all 0.4s ease 0s; */ 
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 50px;
+	width: 100vw;
 }
+.main-timeline .contaner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 50px;
+
+} 
+
 .main-timeline:before{
     content: "";
     width:1px;
@@ -1922,7 +1995,8 @@ a:active.learn-btn{
     position: absolute;
     top: 5.2%;
     left: 14.5%;
-    height:80%;
+   
+	
 }
 .xtra-timeline.main-timeline:before{
 	display:none;
@@ -1935,22 +2009,19 @@ a:active.learn-btn{
     height: 72%; */
 	
 }
-.main-timeline .timeline{
-    position: relative;
-    margin-bottom: 25px;
-    left: -15px;
-}
+
 
 .main-timeline .timeline-content{
     border-radius: 5px;
     transition: all 0.3s ease 0s;
-}
+} 
 .timeline-content  span>i{
     display: inline-block;
 	color: #7370d8;
 	position: relative;
     top: 15px;
-    left: -9px;
+	margin-top: -7px;
+    left: -8px;
 	background: #fff;
 }
 
@@ -1974,6 +2045,25 @@ a:active.learn-btn{
 .main-timeline .timeline.timeline-ml-20{
 	margin-left: 20px;
 }
+
+.about-objective-content {
+	position: relative;
+	top: 100px;
+	margin-top: 15px;
+}
+.xtra-timeline {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.xtra-timeline .description {
+	margin-left: 14px;
+	margin-top: 0px;
+}
+.xtra-timeline .description i{
+	margin-top: 100px;
+}
+
+
 
 /*-------------------------------------
 		BLOG PAGE

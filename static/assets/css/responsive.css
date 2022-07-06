@@ -65,14 +65,13 @@
 	}
 	.about-ceo-img { 
 		width: 100%;
-
-		
+		margin: 0;	
 	}
-	.about-ceo-img .ceo-img {
-		float: none;
-		margin: 0;
+	.about-ceo-img img {
+		width: 100%;
+		height: auto;
+		/* border-radius: 8px; */
 	}
-
 }/*max-width:768px*/
 
 

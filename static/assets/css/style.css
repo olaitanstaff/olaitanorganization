@@ -105,7 +105,7 @@ html,body{
 } */
 
 .header{
-	/* padding-top:20px;  */
+	padding-top:20px; 
 	padding-bottom: 12px;
 
 }
@@ -264,12 +264,12 @@ html,body{
 	outline: 0;
 	font-weight:700;
 	margin-top:18px;
-	padding-bottom: 25px;
+	/* padding-bottom: 25px; */
 	padding-left: 27px;
 
 }
 .navbar-brand img{
-	height:45px;
+	height:35px;
 	width:100%
 }
 
@@ -282,7 +282,7 @@ html,body{
 	font-weight:700;
 	font-family: 'Lato', sans-serif;
 	margin-top:18px;
-	padding-bottom: 25px;
+	/* padding-bottom: 25px; */
 	padding-left: 27px;
 }/* navbar-default */
 
@@ -306,7 +306,6 @@ html,body{
 .sticky .search input {
 	top:40px;
 }
-
 
 .search span {
     position: absolute;
@@ -458,7 +457,7 @@ html,body{
 	background:transparent;
 	color:#fff;
 	font-size: 22px;
-	font-weight:700;
+	font-weight:bold;
 	font-family: 'Lato', sans-serif;
 	border-radius: 50%;
 	-webkit-transition:.5s; 
@@ -654,13 +653,23 @@ html,body{
 /*-------------------------------------
 		5. About Ceo
 --------------------------------------*/
-.container-ceo {
-	padding: 30px;
-	margin-top: 40px;
-	margin-right: 100px;
+.about-ceo-text h4{
+	margin-left: 20px;
 }
-
+.name{
+	font-family: 'Edu TAS Beginner', cursive;
+	font-weight: bolder;
+	font-size: 25px;
+}
+.about-ceo {
+	width: 85%;
+	margin: 50px auto;
+}
+.about-ceo-text {
+	width: 60%;
+}
 .about-ceo-text p {
+
 	font-weight: 300;
 	color:#888;	
 	font-size:16px;
@@ -668,14 +677,14 @@ html,body{
 	line-height: 1.7;
 }
 .about-ceo-img {
-	width: 450px;
 	position:relative;
-	margin-bottom: 10px;
 	overflow: hidden;
+	top:40px;
+	/* height: 100vh; */
 	border-radius: 8px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.4);
 	background-color: #fff;
-	/* margin-right: 200px; */
+	margin: 0 20px 0 20px;
 }
 .about-ceo-img::before{
 	content: '';
@@ -691,17 +700,17 @@ html,body{
 }
 .about-ceo-img img {
 	width: 100%;
-	height: auto;
-	border-radius: 8px;
+	/* height: 100%; */
+	/* border-radius: 8px; */
 }
-.ceo-img-left {
-	float: left;
-	margin: 70px;
-}
-.ceo-img-right {
-	float: right;
-	margin: 70px;
-}
+/* .ceo-img-left { */
+	/* float: left; */
+	/* margin: 70px; */
+/* } */
+/* .ceo-img-right { */
+	/* float: right; */
+	/* margin: 70px; */
+/* } */
 /*-------------------------------------
 		History
 --------------------------------------*/

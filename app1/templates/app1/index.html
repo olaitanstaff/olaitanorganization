@@ -112,7 +112,7 @@
 <!--about-ceo start -->
 <section class="container-fluid about-ceo">
 	<div class="row">
-		<div class="about-ceo-img ceo-img-left">
+		<div class="col-md-4 about-ceo-img">
 			<img
 				class="img-resposive"
 				src="{%static 'assets/images/about/ceo.jpeg'%}"
@@ -120,8 +120,18 @@
 			/>
 		</div>
 		<!--/.about-ceo-img-->
-		<div class="about-ceo-text">
-			<h2>Mot De Notre CEO</h2>
+		<div class="col-md-8 about-ceo-text">
+			<h4
+				style="
+					font-family: 'Poppins';
+					{% comment %} font-style: italic; {% endcomment %}
+					font-weight: 100;
+					font-size: 40px;
+					font-display: swap;
+				"
+			>
+				Hello!!! Je suis <span class="name">Timothy O. J. SOSSA</span>
+			</h4>
 			<p>
 				A quoi sert-il de mourir sans se donner l'opportunité de concrétiser
 				votre rêve et de matérialsier ce projet dont vous détenez?
@@ -146,7 +156,6 @@
 				Bienvenus à OLaitan Organization, l'endroit où toutes vos impossibilités
 				sont tranformées en possibilités.
 			</p>
-			<h3>C.E.O, Timothy O. J. SOSSA</h3>
 		</div>
 		<!--/ ceo text -->
 	</div>
@@ -157,9 +166,9 @@
 
 <!--Word of CEO Message start -->
 <!--about-us start -->
-<section class="container-fluid about-histoire">
+<section class="container-fluid about-ceo">
 	<div class="row">
-		<div class="col-sm-8">
+		<div class="col-md-8 about-ceo-text">
 			<h2>Notre histoire</h2>
 			<p>
 				Notre histoire a commencé pendant le virus COVID-19, sous le nom
@@ -179,7 +188,7 @@
 				<a href="{% url 'app1:about'%}" class="project-view">savoir plus </a>
 			</div>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-md-4 about-ceo-img">
 			<img
 				class="img-resposive"
 				src="{%static 'assets/images/about/about-part.jpeg'%}"

@@ -679,7 +679,7 @@ html,body{
 .about-ceo-img {
 	position:relative;
 	overflow: hidden;
-	top:40px;
+	top:5px;
 	/* height: 100vh; */
 	border-radius: 8px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.4);

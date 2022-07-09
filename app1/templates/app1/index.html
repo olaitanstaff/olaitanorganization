@@ -1,311 +1,384 @@
-{% extends 'app1/base.html' %}
-{%load static %}
-{%block content%}
+{% extends 'app1/base.html' %} {%load static %} {%block content%}
 
 <!-- header-slider-area start -->
-		<section class="header-slider-area">
-			<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
-			  <!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				</ol>
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<div class="single-slide-item slide-1">
-							<div class="container">
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="single-slide-item-content">
-											<h2>Consultez Votre <br> Business Avec Nous</h2>
-											<p>
-												Nous sommes une entreprise pleine de productivité, de travail, de diligence, de passion pour notre travail, de sens de l'urgence solutions rapides, d'intégrité, d'honnêteté, d'innovation et de création d'un environnement heureux et positif.
-											</p>
-											<button type="button" class="slide-btn">
-											get started
-											</button>
-											<button type="button"  class="slide-btn">
-												<a href="{% url 'app1:service'%}">savoir plus</a> 
-											</button>
-											
-										</div><!-- /.single-slide-item-content-->
-									</div><!-- /.col-->
-								</div><!-- /.row-->
-							</div><!-- /.container-->
-						</div><!-- /.single-slide-item-->
-					</div><!-- /.item .active-->
-					<div class="item">
-						<div class="single-slide-item slide-2">
-							<div class="container">
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="single-slide-item-content">
-											<h2>Consultez Votre <br> Business Avec Nous</h2>
-											<p>
-												Notre politique de conduite des affaires est en fait le guide global et pratique pour faire des affaires au sein de l'Organisation Olaitan et il nous appartient- tous les rôles, tous les niveaux et partout où nous opérons - de la connaître et de la vivre chaque jour au sein d'Olaitan. 
-											</p>
-											<button type="button"  class="slide-btn">
-												get started
-											</button>
-											<button type="button"  class="slide-btn
-											">
-											<a  href="{% url 'app1:service'%}">savoir plus</a> 
-											</button>
-										</div><!-- /.single-slide-item-content-->
-									
-									</div><!-- /.col-->
-								</div><!-- /.row-->
-							</div><!-- /.container-->
-						</div><!-- /.single-slide-item-->
-					</div><!-- /.item .active-->
-				</div><!-- /.carousel-inner-->
-
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-					<span class="lnr lnr-chevron-left"></span>
-				</a>
-				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-					<span class="lnr lnr-chevron-right"></span>
-				</a>
-			</div><!-- /.carousel-->
-
-		</section><!-- /.header-slider-area-->
-		<!-- header-slider-area end -->
-
-		<!--about-ceo start -->
-		<section class="about-ceo">
-			<div class="container-ceo">
-								<div class="about-ceo-img ceo-img">
-									<img class="img-resposive" src="{%static 'assets/images/about/ceo.jpeg'%}" alt="about-ceo-images">
-								</div><!--/.about-ceo-img-->
-								<div class="about-ceo-text">
-									<h2>Mot De Notre CEO</h2>
-									<p>A quoi sert-il de mourir sans se donner
-										l'opportunité de concrétiser votre rêve et
-										de matérialsier ce projet dont vous
-										détenez?</p> 
-									<p> Vous êtes chefs d'entreprises,
-										leaders d'insitutions, personnes
-										d'influence, diplomates, pères, mères,
-										jeunes filles, jeunes garçons et vous
-										souhaitez devenir ce modèle pour
-										plusieurs, sachez le bien, toute une
-										genération attend votre manifestation
-										pour l'accomplissement de leur propre
-										destinée. 
-									</p>
-									<p>C'est dans ce sens que dans sa volonté de
-										se positionner comme le référant N°1
-										autant sur le plan national et
-										international, que OLaitan Organization
-										devient votre partenaire qui s'associe avec
-										vous dans la matérialisation , la
-										concrétisation , et l'implémentation de
-										vos idées d'affaires et projets sur le
-										marché tout en lui donnant une touche
-										d'exclusivité, d'excellence, de grandeur,
-										et de pragmatisme sur le terrain, en
-										toute légalité avec authénticité et
-										transparence.</p> 
-									<p> Bienvenus à OLaitan Organization, l'endroit où toutes vos impossibilités sont tranformées en possibilités.
-									</p>
-									<h3>C.E.O, Timothy O. J. SOSSA</h3>
-								</div> <!--/ ceo text -->
-			</div><!--/.container-->
-		</section><!--/.about-us-->
-		<!--about-us end -->
-
-		<!--statistics start-->
-		<section  class="statistics">
-			<div class="container">
-				<div class="statistics-counter "> 
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-img">
-								<img src="{%static 'assets/images/counter/counter1.png'%}" alt="counter-icon" />
-							</div><!--/.statistics-img-->
-							<div class="statistics-content">
-								<div class="counter">2556</div>
-								<h3>days worked</h3>
-							</div><!--/.statistics-content-->
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-img">
-								<img src="{%static 'assets/images/counter/counter2.png'%}" alt="counter-icon" />
-							</div><!--/.statistics-img-->
-							<div class="statistics-content">
-								<div class="counter">326</div>
-								<h3>project finished</h3>
-							</div><!--/.statistics-content-->
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-img">
-								<img src="{%static 'assets/images/counter/counter3.png'%}" alt="counter-icon" />
-							</div><!--/.statistics-img-->
-							<div class="statistics-content">
-								<div class="counter">1526</div>
-								<h3>coffee cup</h3>
-							</div><!--/.statistics-content-->
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-img">
-								<img src="{%static 'assets/images/counter/counter4.png'%}" alt="counter-icon" />
-							</div><!--/.statistics-img-->
-							<div class="statistics-content">
-								<div class="counter">856</div>
-								<h3>client satisfied</h3>
-							</div><!--/.statistics-content-->
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-				</div><!--/.statistics-counter-->	
-			</div><!--/.container-->
-
-		</section><!--/.statistics-->
-		<!--statistics end-->
-
-		<!--Word of CEO Message start -->			
-			<!--about-us start -->
-			<section class="about-us">
-				<div class="container">
-					<div class="about-us-content">
+<section class="header-slider-area">
+	<div
+		id="carousel-example-generic"
+		class="carousel slide carousel-fade"
+		data-ride="carousel"
+	>
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li
+				data-target="#carousel-example-generic"
+				data-slide-to="0"
+				class="active"
+			></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		</ol>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<div class="single-slide-item slide-1">
+					<div class="container">
 						<div class="row">
-							<div class="col-sm-6">
-								<div class="single-about-us">
-									<div class="about-us-txt">
-										<h2>Notre histoire</h2>
-										<p>Notre histoire a commencé pendant le virus COVID-19, sous le nom d'OLAITAN FUTURE FORCE à Casablanca, Maroc. </p>
-										<p>Car notre CEO, M. Timothy. O.J. Sossa, a réalisé l'impact négatif du virus sur le monde, a voulu créer une plateforme où les gens peuvent librement interagir et échanger des idées et des informations, et être inspirés pour innover à leur propre manière</p> 
-										<p> En raison de l'expansion de la société, avec plus de domaines d'activité et de formations, en 2021 le nom a été changé en OLAITAN ORGANIZATION
+							<div class="col-sm-12">
+								<div class="single-slide-item-content">
+									<h2>
+										Consultez Votre <br />
+										Business Avec Nous
+									</h2>
+									<p>
+										Nous sommes une entreprise pleine de productivité, de
+										travail, de diligence, de passion pour notre travail, de
+										sens de l'urgence solutions rapides, d'intégrité,
+										d'honnêteté, d'innovation et de création d'un environnement
+										heureux et positif.
+									</p>
+									<button type="button" class="slide-btn">get started</button>
+									<button type="button" class="slide-btn">
+										<a href="{% url 'app1:service'%}">savoir plus</a>
+									</button>
+								</div>
+								<!-- /.single-slide-item-content-->
+							</div>
+							<!-- /.col-->
+						</div>
+						<!-- /.row-->
+					</div>
+					<!-- /.container-->
+				</div>
+				<!-- /.single-slide-item-->
+			</div>
+			<!-- /.item .active-->
+			<div class="item">
+				<div class="single-slide-item slide-2">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="single-slide-item-content">
+									<h2>
+										Consultez Votre <br />
+										Business Avec Nous
+									</h2>
+									<p>
+										Notre politique de conduite des affaires est en fait le
+										guide global et pratique pour faire des affaires au sein de
+										l'Organisation Olaitan et il nous appartient- tous les
+										rôles, tous les niveaux et partout où nous opérons - de la
+										connaître et de la vivre chaque jour au sein d'Olaitan.
+									</p>
+									<button type="button" class="slide-btn">get started</button>
+									<button type="button" class="slide-btn">
+										<a href="{% url 'app1:service'%}">savoir plus</a>
+									</button>
+								</div>
+								<!-- /.single-slide-item-content-->
+							</div>
+							<!-- /.col-->
+						</div>
+						<!-- /.row-->
+					</div>
+					<!-- /.container-->
+				</div>
+				<!-- /.single-slide-item-->
+			</div>
+			<!-- /.item .active-->
+		</div>
+		<!-- /.carousel-inner-->
+
+		<!-- Controls -->
+		<a
+			class="left carousel-control"
+			href="#carousel-example-generic"
+			role="button"
+			data-slide="prev"
+		>
+			<span class="lnr lnr-chevron-left"></span>
+		</a>
+		<a
+			class="right carousel-control"
+			href="#carousel-example-generic"
+			role="button"
+			data-slide="next"
+		>
+			<span class="lnr lnr-chevron-right"></span>
+		</a>
+	</div>
+	<!-- /.carousel-->
+</section>
+<!-- /.header-slider-area-->
+<!-- header-slider-area end -->
+<!--about-ceo start -->
+<section class="container-fluid about-ceo">
+	<div class="row">
+		<div class="about-ceo-img ceo-img-left">
+			<img
+				class="img-resposive"
+				src="{%static 'assets/images/about/ceo.jpeg'%}"
+				alt="about-ceo-images"
+			/>
+		</div>
+		<!--/.about-ceo-img-->
+		<div class="about-ceo-text">
+			<h2>Mot De Notre CEO</h2>
+			<p>
+				A quoi sert-il de mourir sans se donner l'opportunité de concrétiser
+				votre rêve et de matérialsier ce projet dont vous détenez?
+			</p>
+			<p>
+				Vous êtes chefs d'entreprises, leaders d'insitutions, personne
+				d'influence, diplomates, pères, mères, jeunes filles, jeunes garçons et
+				vous souhaitez devenir ce modèle pour plusieurs, sachez le bien, toute
+				une genération attend votre manifestation pour l'accomplissement de leur
+				propre destinée.
+			</p>
+			<p>
+				C'est dans ce sens que dans sa volonté de se positionner comme le
+				référant N°1 autant sur le plan national et international, que OLaitan
+				Organization devient votre partenaire qui s'associe avec vous dans la
+				matérialisation , la concrétisation , et l'implémentation de vos idées
+				d'affaires et projets sur le marché tout en lui donnant une touche
+				d'exclusivité, d'excellence, de grandeur, et de pragmatisme sur le
+				terrain, en toute légalité avec authénticité et transparence.
+			</p>
+			<p>
+				Bienvenus à OLaitan Organization, l'endroit où toutes vos impossibilités
+				sont tranformées en possibilités.
+			</p>
+			<h3>C.E.O, Timothy O. J. SOSSA</h3>
+		</div>
+		<!--/ ceo text -->
+	</div>
+	<!--/.container-->
+</section>
+<!--/.about-us-->
+<!--about-us end -->
+
+<!--Word of CEO Message start -->
+<!--about-us start -->
+<section class="container-fluid about-histoire">
+	<div class="row">
+		<div class="col-sm-8">
+			<h2>Notre histoire</h2>
+			<p>
+				Notre histoire a commencé pendant le virus COVID-19, sous le nom
+				d'OLAITAN FUTURE FORCE à Casablanca, Maroc.
+			</p>
+			<p>
+				Car notre CEO, M. Timothy. O.J. Sossa, a réalisé l'impact négatif du
+				virus sur le monde, a voulu créer une plateforme où les gens peuvent
+				librement interagir et échanger des idées et des informations, et être
+				inspirés pour innover à leur propre manière
+			</p>
+			<p>
+				En raison de l'expansion de la société, avec plus de domaines d'activité
+				et de formations, en 2021 le nom a été changé en OLAITAN ORGANIZATION
+			</p>
+			<div class="project-btn">
+				<a href="{% url 'app1:about'%}" class="project-view">savoir plus </a>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<img
+				class="img-resposive"
+				src="{%static 'assets/images/about/about-part.jpeg'%}"
+				alt="histoire-images"
+			/>
+		</div>
+	</div>
+	<!--/.container-->
+</section>
+<!--/.about-us-->
+<!--about-us end -->
+
+<!--Word of CEO end-->
+
+<!--contact start-->
+<section class="contact">
+	<div class="container">
+		<div class="contact-details">
+			<div class="section-header contact-head text-center">
+				<h2>Nous Contacter</h2>
+			</div>
+			<!--/.section-header-->
+			<div class="contact-content">
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-5">
+						<div class="single-contact-box">
+							<div class="contact-right">
+								<div class="contact-adress">
+									<div class="contact-office-address">
+										<h3>Nous Contacter</h3>
+										<p>
+											Bureau 2 4eme étage, angle 56 Avenu de France et 37 Aveny
+											Ibn Sina- Agadal, Rabat
 										</p>
-										<div class="project-btn">
-											<a href="{% url 'app1:about'%}"  class="project-view">savoir plus
-											</a>
-										</div><!--/.project-btn-->
-									</div><!--/.about-us-txt-->
-								</div><!--/.single-about-us-->
-							</div><!--/.col-->
-							<div class="col-sm-6">
-								<div class="single-about-us">
-									<div class="about-us-img">
-										<img src="{%static 'assets/images/about/about-part.jpeg'%}" alt="about images">
-									</div><!--/.about-us-img-->
-								</div><!--/.single-about-us-->
-							</div><!--/.col-->
-						</div><!--/.row-->
-					</div><!--/.about-us-content-->
-				</div><!--/.container-->
-			</section><!--/.about-us-->
-			<!--about-us end -->
-	
-		<!--Word of CEO end-->
+										<div class="contact-online-address">
+											<div class="single-online-address">
+												<i class="fa fa-phone"></i>
+												{{contactNumber}}
+											</div>
+											<!--/.single-online-address-->
 
-		<!--contact start-->
-		<section  class="contact">
-			<div class="container">
-				<div class="contact-details">
-					<div class="section-header contact-head  text-center">
-						<h2>Nous Contacter</h2>
-					</div><!--/.section-header-->
-					<div class="contact-content">
-						<div class="row">
-							<div class="col-sm-offset-1 col-sm-5">
-								<div class="single-contact-box">
-									<div class="contact-right">
-										<div class="contact-adress">
-											<div class="contact-office-address">
-												<h3>Nous Contacter</h3>
-												<p>
-													Bureau 2 4eme étage, angle 56 Avenu de France et 37 Aveny Ibn Sina- Agadal, Rabat
-												</p>
-												<div class="contact-online-address">
-													<div class="single-online-address">
-														<i class="fa fa-phone"></i>
-														{{contactNumber}}
-													</div><!--/.single-online-address-->
-													
-													<div class="single-online-address">
-														<i class="fa fa-envelope-o"></i>
-														<span>{{email}}</span>
-													</div><!--/.single-online-address-->
-												</div><!--/.contact-online-address-->
-											</div><!--/.contact-office-address-->
-											<div class="contact-office-address">
-												<h3>réseaux sociau</h3>
-												<div class="contact-icon">
-													<ul>
-														<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!--/li-->
-														<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><!--/li-->
-														<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><!--/li-->
-														<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><!--/li-->
-													</ul><!--/ul-->
-												</div><!--/.contact-icon-->
-											</div><!--/.contact-office-address-->
-											
-										</div><!--/.contact-address-->
-									</div><!--/.contact-right-->
-								</div><!--/.single-contact-box-->
-							</div><!--/.col-->
-							<div class="col-sm-5">
-								<div class="single-contact-box">
-									<div class="contact-form">
-										<h3>Laissez-nous un message ici</h3>
-										<form>
-											<div class="row">
-												<div class="col-sm-6 col-xs-12">
-													<div class="form-group">
-													  <input type="text" class="form-control" id="firstname" placeholder="Nom" name="firstname">
-													</div><!--/.form-group-->
-												</div><!--/.col-->
-												<div class="col-sm-6 col-xs-12">
-													<div class="form-group">
-													  <input type="text" class="form-control" id="lastname" placeholder="Prenom" name="laststname">
-													</div><!--/.form-group-->
-												</div><!--/.col-->
-											</div><!--/.row-->
-											<div class="row">
-												<div class="col-sm-6 col-xs-12">
-													<div class="form-group">
-														<input type="email" class="form-control" id="email" placeholder="Email" name="email">
-													</div><!--/.form-group-->
-												</div><!--/.col-->
-												<div class="col-sm-6 col-xs-12">
-													<div class="form-group">
-														<input type="text" class="form-control" id="phone" placeholder="Phone" name="phone">
-													</div><!--/.form-group-->
-												</div><!--/.col-->
-											</div><!--/.row-->
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="form-group">
-														<textarea class="form-control" rows="7" id="comment" placeholder="Message" ></textarea>
-													</div><!--/.form-group-->
-												</div><!--/.col-->
-											</div><!--/.row-->
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="single-contact-btn pull-right">
-														<button class="contact-btn" type="button">envoyez</button>
-													</div><!--/.single-single-contact-btn-->
-												</div><!--/.col-->
-											</div><!--/.row-->
-										</form><!--/form-->
-									</div><!--/.contact-form-->
-								</div><!--/.single-contact-box-->
-							</div><!--/.col-->
-						</div><!--/.row-->
-					</div><!--/.contact-content-->
-				</div><!--/.contact-details-->
-			</div><!--/.container-->
-
-		</section><!--/.contact-->
+											<div class="single-online-address">
+												<i class="fa fa-envelope-o"></i>
+												<span>{{email}}</span>
+											</div>
+											<!--/.single-online-address-->
+										</div>
+										<!--/.contact-online-address-->
+									</div>
+									<!--/.contact-office-address-->
+									<div class="contact-office-address">
+										<h3>réseaux sociau</h3>
+										<div class="contact-icon">
+											<ul>
+												<li>
+													<a href="#"
+														><i class="fa fa-facebook" aria-hidden="true"></i
+													></a>
+												</li>
+												<!--/li-->
+												<li>
+													<a href="#"
+														><i class="fa fa-google-plus" aria-hidden="true"></i
+													></a>
+												</li>
+												<!--/li-->
+												<li>
+													<a href="#"
+														><i class="fa fa-linkedin" aria-hidden="true"></i
+													></a>
+												</li>
+												<!--/li-->
+												<li>
+													<a href="#"
+														><i class="fa fa-twitter" aria-hidden="true"></i
+													></a>
+												</li>
+												<!--/li-->
+											</ul>
+											<!--/ul-->
+										</div>
+										<!--/.contact-icon-->
+									</div>
+									<!--/.contact-office-address-->
+								</div>
+								<!--/.contact-address-->
+							</div>
+							<!--/.contact-right-->
+						</div>
+						<!--/.single-contact-box-->
+					</div>
+					<!--/.col-->
+					<div class="col-sm-5">
+						<div class="single-contact-box">
+							<div class="contact-form">
+								<h3>Laissez-nous un message ici</h3>
+								<form>
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													id="firstname"
+													placeholder="Nom"
+													name="firstname"
+												/>
+											</div>
+											<!--/.form-group-->
+										</div>
+										<!--/.col-->
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													id="lastname"
+													placeholder="Prenom"
+													name="laststname"
+												/>
+											</div>
+											<!--/.form-group-->
+										</div>
+										<!--/.col-->
+									</div>
+									<!--/.row-->
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input
+													type="email"
+													class="form-control"
+													id="email"
+													placeholder="Email"
+													name="email"
+												/>
+											</div>
+											<!--/.form-group-->
+										</div>
+										<!--/.col-->
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													id="phone"
+													placeholder="Phone"
+													name="phone"
+												/>
+											</div>
+											<!--/.form-group-->
+										</div>
+										<!--/.col-->
+									</div>
+									<!--/.row-->
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<textarea
+													class="form-control"
+													rows="7"
+													id="comment"
+													placeholder="Message"
+												></textarea>
+											</div>
+											<!--/.form-group-->
+										</div>
+										<!--/.col-->
+									</div>
+									<!--/.row-->
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="single-contact-btn pull-right">
+												<button class="contact-btn" type="button">
+													envoyez
+												</button>
+											</div>
+											<!--/.single-single-contact-btn-->
+										</div>
+										<!--/.col-->
+									</div>
+									<!--/.row-->
+								</form>
+								<!--/form-->
+							</div>
+							<!--/.contact-form-->
+						</div>
+						<!--/.single-contact-box-->
+					</div>
+					<!--/.col-->
+				</div>
+				<!--/.row-->
+			</div>
+			<!--/.contact-content-->
+		</div>
+		<!--/.contact-details-->
+	</div>
+	<!--/.container-->
+</section>
+<!--/.contact-->
 
 {%endblock%}
-

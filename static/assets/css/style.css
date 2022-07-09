@@ -649,11 +649,14 @@ html,body{
 	z-index: -1;
 } 
 
+
+
 /*-------------------------------------
 		5. About Ceo
 --------------------------------------*/
 .container-ceo {
 	padding: 30px;
+	margin-top: 40px;
 	margin-right: 100px;
 }
 
@@ -663,7 +666,6 @@ html,body{
 	font-size:16px;
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.7;
-	
 }
 .about-ceo-img {
 	width: 450px;
@@ -692,11 +694,68 @@ html,body{
 	height: auto;
 	border-radius: 8px;
 }
-.ceo-img {
+.ceo-img-left {
 	float: left;
 	margin: 70px;
 }
+.ceo-img-right {
+	float: right;
+	margin: 70px;
+}
+/*-------------------------------------
+		History
+--------------------------------------*/
+.container-histoire {
+	padding: 30px;
+	margin: 100px 100px 100px 0;
+}
+.ceo-histoire-right {
+	float: right;
+	margin-right: 70px;
+}
+.about-histoire-text {
+	width:550px ;
+	margin: 0 150px 0 150px;
+}
+.about-histoire-text p {
+	font-weight: 300;
+	color:#888;	
+	font-size:16px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.7;	
+} 
+.about-histoire-img {
+	width: 450px;
+	position:relative;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+	background-color: #fff;
+	top: -350px;
+	/* margin: 0 100 0 0px; */
+	/* margin-top: -250px;  */
+}
 
+.about-histoire-img::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 8px solid #fff;
+	z-index: 1;
+	overflow:hidden;
+	box-sizing: border-box;
+}
+ .about-histoire-img img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;	
+ }
+ .about-histoire {
+	margin-bottom: 200px;
+ }
 /*-------------------------------------
 		6. Service
 --------------------------------------*/

@@ -56,7 +56,10 @@
 	.children { padding-left: 0;}
 	.about-ceo-text {
 		width: 100%;
-		/* margin-right: 155px; */
+		margin-right: 155px; 
+	}
+	.name {
+		font-size: 16px;
 	}
 
 }/*max-width:991px*/

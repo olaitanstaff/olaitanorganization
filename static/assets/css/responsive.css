@@ -61,6 +61,9 @@
 	.name {
 		font-size: 16px;
 	}
+	.carousel-control {
+		display: none;
+	}
 
 }/*max-width:991px*/
 

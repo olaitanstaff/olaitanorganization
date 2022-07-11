@@ -615,7 +615,7 @@ html,body{
 
 .about-us-txt{
 	margin-top: 103px;
-	
+	font-family: 'Poppins', sans-serif;
 }
 .about-us h2 {
 	color:#4d4e54;	
@@ -653,20 +653,25 @@ html,body{
 /*-------------------------------------
 		5. About Ceo
 --------------------------------------*/
-.about-ceo-text h4{
-	margin-left: 20px;
+.about-ceo-text h2{
+	color: #44454f;
+	font-size: 30px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	margin-bottom: 35px;
 }
-.name{
+.name {
 	font-family: 'Edu TAS Beginner', cursive;
 	font-weight: bolder;
 	font-size: 25px;
 }
 .about-ceo {
-	width: 85%;
-	margin: 50px auto;
+	width: 100vw;
+	margin-top: 120px;
 }
 .about-ceo-text {
-	width: 60%;
+	width: 45%;
+	/* height: 100vh; */
 	margin-top: 10px;
 }
 .about-ceo-text p {
@@ -675,7 +680,8 @@ html,body{
 	color:#888;	
 	font-size:16px;
 	font-family: 'Poppins', sans-serif;
-	line-height: 1.7;
+	line-height: 2;
+	text-align: justify;
 }
 .about-ceo-img {
 	position:relative;
@@ -683,7 +689,7 @@ html,body{
 	top:5px;
 	/* height: 100vh; */
 	border-radius: 8px;
-	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+	/* box-shadow: 0 0 5px rgba(0,0,0,0.4); */
 	background-color: #fff;
 	margin: 0 20px 0 20px;
 }
@@ -694,24 +700,57 @@ html,body{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border: 8px solid #fff;
+	/* border: 8px solid #fff; */
 	z-index: 1;
 	overflow:hidden;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 }
 .about-ceo-img img {
 	width: 100%;
-	/* height: 100%; */
+	height: 800px;
+	/* height: 25%; */
 	/* border-radius: 8px; */
 }
-/* .ceo-img-left { */
-	/* float: left; */
-	/* margin: 70px; */
-/* } */
-/* .ceo-img-right { */
-	/* float: right; */
-	/* margin: 70px; */
-/* } */
+.project-btn {
+	position: relative;
+	bottom: 170px;
+}
+/*-------------------------------------
+		Timeline
+--------------------------------------*/
+.main-timeline {
+	position: relative;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 5rem;
+	margin: 0 auto 1rem auto;
+	overflow: hidden;
+}
+
+.main-timeline::after{
+	content: '';
+	position:absolute;
+	top: 0;
+	left:50%;
+	margin-left: -2px;
+	border-right: 2px solid #4b546f;
+	height: 100%;
+	display: block;
+}
+.timeline-row {
+	padding-left: 50%;
+	position: relative;
+	margin-bottom: 30px;
+}
+.timeline-row .timeline-content {
+	position: absolute;
+	right: 50%;
+	top: 15px;
+	text-align: right;
+	margin-right: 20px;
+	font-size: 1.5rem;
+}
 /*-------------------------------------
 		History
 --------------------------------------*/

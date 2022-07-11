@@ -1,459 +1,579 @@
-{% extends 'app1/base.html' %}
-{%load static %}
-{%block content%}
-		
-		<!--about-part start-->
-		<section class="about-part">
-			<div class="container">
-				<div class="about-part-details text-center"> 
-					<h2>À Propos</h2>
-					<div class="about-part-content">
-						<div class="breadcrumbs">
-							<div class="container">
-								<ol class="breadcrumb">
-								  <li><a href="{% url 'app1:index'%}">Accueil</a><span>//</span></li>
-								  <li><a href="{% url 'app1:about'%}">À Propos</a></li>
-								</ol><!--/.breadcrumb-->
-							</div><!--/.container-->
-						</div><!--/.breadcrumbs-->
-					</div><!--/.about-part-content-->
-				</div><!--/.about-part-details-->	
-			</div><!--/.container-->
-		</section><!--/.about-part-->
-		<!--about-part end-->
+{% extends 'app1/base.html' %} {%load static %} {%block content%}
 
-		<!--about-history start-->
-		<div class="about-history">
-			<div class="container">
-				<div class="about-history-content">
-					<div class="row">
-						<div class="col-md-5 col-sm-12">
-							<div class="single-about-history">
-								<div class="about-history-img ">
-									<img src="{%static 'assets/images/about/ab1.jpg'%}" alt="about">
-								</div><!--/.about-history-img-->
-							</div><!--/.single-about-history-->
-						</div><!--/.col-->
-						<div class="col-md-offset-1 col-md-6 col-sm-12">
+<!--about-part start-->
+<section class="about-part">
+	<div class="container">
+		<div class="about-part-details text-center">
+			<h2>À Propos</h2>
+			<div class="about-part-content">
+				<div class="breadcrumbs">
+					<div class="container">
+						<ol class="breadcrumb">
+							<li>
+								<a href="{% url 'app1:index'%}">Accueil</a><span>//</span>
+							</li>
+							<li><a href="{% url 'app1:about'%}">À Propos</a></li>
+						</ol>
+						<!--/.breadcrumb-->
+					</div>
+					<!--/.container-->
+				</div>
+				<!--/.breadcrumbs-->
+			</div>
+			<!--/.about-part-content-->
+		</div>
+		<!--/.about-part-details-->
+	</div>
+	<!--/.container-->
+</section>
+<!--/.about-part-->
+<!--about-part end-->
+
+<!--about-history start-->
+<section class="container-fluid about-ceo">
+	<div class="row">
+		<div class="col-md-6 about-ceo-img">
+			<img
+				style="height: 100%"
+				class="img-resposive"
+				src="{%static 'assets/images/about/ab1.jpg'%}"
+				alt="histoire-images"
+			/>
+		</div>
+		<div class="col-md-6 about-ceo-text">
+			<h2 class="mb-sm-0">Notre histoire</h2>
+			<p>
+				Notre histoire a commencé pendant le virus COVID-19, sous le nom
+				d'OLAITAN FUTURE FORCE à Casablanca, Maroc.
+			</p>
+			<p>
+				Car notre CEO, M. Timothy. O.J. Sossa, a réalisé l'impact négatif du
+				virus sur le monde, a voulu créer une plateforme où les gens peuvent
+				librement interagir et échanger des idées et des informations, et être
+				inspirés pour innover à leur propre manière
+			</p>
+			<p>
+				En raison de l'expansion de la société, avec plus de domaines d'activité
+				et de formations, en 2021 le nom a été changé en OLAITAN ORGANIZATION
+			</p>
+			<p>
+				Il a voulu créer une plateforme où les gens peuvent librement interagir
+				et échanger des idées et des informations, et être inspirés pour innover
+				à leur propre manière . En raison de l'expansion de la société, avec
+				plus de domaines d'activité et de formations, en 2021 le nom a été
+				changé en OLAITAN ORGANIZATION
+			</p>
+		</div>
+	</div>
+	<!--/.container-->
+</section>
+<!--/.about-us-->
+<!--about-us end -->
+
+<div class="about-history">
+	<div class="container">
+		<div class="about-history-content">
+			<!--/.row-->
+
+			<!-- main timeline start -->
+			<div class="main-timeline">
+				<div class="timeline-row">
+					<div class="timeline-content">
+						<h3 class="timeline-time">Janvier 2021</h3>
+						<p>
+							Participation Au Concours de La BAD et Souk AT-TANMIA soumission
+							de Olaitan Future Force
+						</p>
+					</div>
+					<div class="timeline-image">
+						<i class="icon-attachment"></i>
+						<img
+							src="{% static 'assets/images/about/tm1.jpeg' %}"
+							alt="Janvier2021"
+						/>
+					</div>
+				</div>
+			</div>
+			<!--.main-timeline-->
+			<!-- maint timeline ends-->
+			<!-- Objective -->
+
+			<div class="our-objective">
+				<div class="row">
+					<div class="about-objective-content">
+						<div class="col-md-6 col-sm-12">
 							<div class="single-about-history">
 								<div class="about-history-txt">
-									<h2>Notre Histoire</h2>
+									<h2>Notre Objective</h2>
 									<p>
-										Notre histoire a commencé pendant le virus COVID-19, sous le nom d'OLAITAN FUTURE FORCE à Casablanca, Maroc. Car notre CEO, M. Timothy. O.J. Sossa, a réalisé l'impact négatif du virus sur le monde.
+										Offrir l'excellence en matière de formation et de coaching
+										dans la mise en œuvre de stratégies d'entreprise, de modèles
+										d'entreprise, de conseil en gestion et de formation à vos
+										côtés afin de former, de construire et de faire germer une
+										nouvelle génération de jeunes entrepreneurs professionnels
+										innovants et très intelligents qui placent l'excellence du
+										service rendu, l'amélioration continue de l'existant et la
+										création de richesse, de valeur et de satisfaction constante
+										du client au centre de le de leurs intérêts.
 									</p>
-									<p> Il a voulu créer une plateforme où les gens peuvent librement interagir et échanger des idées et des informations, et être inspirés pour innover à leur propre manière . En raison de l'expansion de la société, avec plus de domaines d'activité et de formations, en 2021 le nom a été changé en OLAITAN ORGANIZATION
-									</p>
-								</div><!--/.about-history-txt-->
-							</div><!--/.single-about-history-->
-						</div><!--/.col-->
-					</div><!--/.row-->
 
-					<!-- main timeline start -->
-					<div class="main-timeline">
-						<div class="row container">
-							<div class="col-md-2 col-sm-2">
-								<div class="experience-time">
-									<h3>Janvier 2021</h3>
-								</div><!--/.experience-time-->
-							</div><!--/.col-->
-							<div class="col-md-10 col-sm-10">
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-										<ul class="description">
-											<li>PARTICIPATION AU CONCOURS DE LA BAD et SOUK AT-TANMIA SOUMISSION DE OLAITAN FUTURE FORCE</li>
-										</ul>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div><!--/.col-->
-						</div><!--/.row-->
+									<div class="main-timeline xtra-timeline">
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="timeline timeline-ml-20">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span
+																><i
+																	class="fa fa-arrow-right"
+																	aria-hidden="true"
+																></i
+															></span>
+														</h4>
 
-						<div class="row container">
-							<div class="col-md-2 col-sm-2">
-								<div class="experience-time">
-									<h3>Fevrier 2021</h3>
-								</div><!--/.experience-time-->
-							</div><!--/.col-->
-							<div class="col-md-10 col-sm-10">
-								<div class="timeline">
-									
-									<div class="timeline-content">
-										<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-										<ul class="description">
-											<li>SELECTION DE OLAITAN FUTURE FORCE PARMI LES 9 PREMIERS SUR 2500</li>
-										</ul>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div><!--/.col-->
-						</div><!--/.row-->
+														<ul class="description">
+															<li>
+																Légalité, Professionnalisme, et Authenticité
+															</li>
+														</ul>
+													</div>
+													<!--/.timeline-content-->
+												</div>
+												<!--/.timeline-->
+											</div>
+											<!--/.col-->
+										</div>
+										<!--/.row-->
 
-						<div class="row container">
-							<div class="col-md-2 col-sm-2">
-								<div class="experience-time">
-									<h3>Septembre 2021</h3>
-								</div><!--/.experience-time-->
-							</div><!--/.col-->
-							<div class="col-md-10 col-sm-10">
-								<div class="timeline">
-									
-									<div class="timeline-content">
-										<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-										
-										<ul class="description">
-											<li>INSTALLATION A RABAT POSTULAT A L'OMPIC ET CREATION DE OLAITAN ORGANIZATION</li>
-										</ul>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div><!--/.col-->
-						</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="timeline timeline-ml-20">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span
+																><i
+																	class="fa fa-arrow-right"
+																	aria-hidden="true"
+																></i
+															></span>
+														</h4>
 
-						<div class="row container">
-							<div class="col-md-2 col-sm-2">
-								<div class="experience-time">
-									<h3>Novembre 2021</h3>
-								</div><!--/.experience-time-->
-							</div><!--/.col-->
-							<div class="col-md-10 col-sm-10">
-								<div class="timeline">
-									
-									<div class="timeline-content">
-										<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
-										
-										<ul class="description">
-											<li>DEBUT DE L'OFFICIALISATION DE OLAITAN ORGANIZATION ET DOMICILIATION DE OLAITAN ORGANIZATION</li>
-										</ul>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div><!--/.col-->
-						</div><!--/.row-->
-					</div><!--.main-timeline-->
-					<!-- maint timeline ends-->
-					<!-- Objective -->
-					
-					
-					<div class="our-objective">
-					<div class="row">
-						<div class="about-objective-content">
-							<div class="col-md-6 col-sm-12">
-								<div class="single-about-history">
-									<div class="about-history-txt">
-										<h2>Notre Objective</h2>
-										<p>
-											Offrir l'excellence en matière de formation et de coaching dans la mise en œuvre de stratégies d'entreprise, de modèles d'entreprise, de conseil en gestion et de formation à vos côtés afin de former, de construire et de faire germer une nouvelle génération de jeunes entrepreneurs professionnels innovants et très intelligents qui placent l'excellence du service rendu, l'amélioration continue de l'existant et la création de richesse, de valeur et de satisfaction constante du client au centre de le de leurs intérêts.
-										</p>
+														<ul class="description">
+															<li>
+																Service Transaprente, d'excellence,
+																d'Exclusivité
+															</li>
+														</ul>
+													</div>
+													<!--/.timeline-content-->
+												</div>
+												<!--/.timeline-->
+											</div>
+											<!--/.col-->
+										</div>
+										<!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="timeline timeline-ml-20">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span
+																><i
+																	class="fa fa-arrow-right"
+																	aria-hidden="true"
+																></i
+															></span>
+														</h4>
 
-										<div class="main-timeline  xtra-timeline">
-
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="timeline timeline-ml-20">
-														
-														<div class="timeline-content">
-															<h4 class="title"> <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span></h4>
-															
-															<ul class="description">
-																<li>Légalité, Professionnalisme, et Authenticité</li>
-
-															</ul>
-														</div><!--/.timeline-content-->
-													</div><!--/.timeline-->
-												</div><!--/.col-->
-											</div><!--/.row-->
-
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="timeline timeline-ml-20">
-														
-														<div class="timeline-content">
-															<h4 class="title"> <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span></h4>
-															
-															<ul class="description">
-																<li>Service Transaprente, d'excellence, d'Exclusivité</li>
-
-															</ul>
-														</div><!--/.timeline-content-->
-													</div><!--/.timeline-->
-												</div><!--/.col-->
-											</div><!--/.row-->
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="timeline timeline-ml-20">
-														
-														<div class="timeline-content">
-															<h4 class="title"> <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span></h4>
-															
-															<ul class="description">
-																<li>Temps optimisé sous contrainte budgétaire</li>
-															</ul>
-														</div><!--/.timeline-content-->
-													</div><!--/.timeline-->
-												</div><!--/.col-->
-											</div><!--/.row-->
-										</div><!--.main-timeline-->
-									</div><!--/.about-history-txt-->
-								</div><!--/.single-about-history-->
-							</div><!--/.col-->
-							<div class="col-md-offset-1 col-md-5 col-sm-12">
-								<div class="single-about-history">
-									<div class="about-history-img">
-										<img src="{% static 'assets/images/about/abt3.jpg' %}" alt="about">
-									</div><!--/.about-history-img-->
-								</div><!--/.single-about-history-->
-							</div><!--/.col-->
-						</div><!--/.about-vission-content-->
-					</div><!--/.row-->
-				</div><!--/.about-history-content-->
+														<ul class="description">
+															<li>Temps optimisé sous contrainte budgétaire</li>
+														</ul>
+													</div>
+													<!--/.timeline-content-->
+												</div>
+												<!--/.timeline-->
+											</div>
+											<!--/.col-->
+										</div>
+										<!--/.row-->
+									</div>
+									<!--.main-timeline-->
+								</div>
+								<!--/.about-history-txt-->
+							</div>
+							<!--/.single-about-history-->
+						</div>
+						<!--/.col-->
+						<div class="col-md-offset-1 col-md-5 col-sm-12">
+							<div class="single-about-history">
+								<div class="about-history-img">
+									<img
+										src="{% static 'assets/images/about/abt3.jpg' %}"
+										alt="about"
+									/>
+								</div>
+								<!--/.about-history-img-->
+							</div>
+							<!--/.single-about-history-->
+						</div>
+						<!--/.col-->
+					</div>
+					<!--/.about-vission-content-->
+				</div>
+				<!--/.row-->
 			</div>
-				<!-- Objective ends -->
-			</div><!--/.container-->
-		</div><!--/.about-history-->
-		<!--about-history end-->
+			<!--/.about-history-content-->
+		</div>
+		<!-- Objective ends -->
+	</div>
+	<!--/.container-->
+</div>
+<!--/.about-history-->
+<!--about-history end-->
 
-		
-		{% comment %} <!--statistics start-->
-		<section  class="statistics">
-			<div class="container">
-				<div class="statistics-counter "> 
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-img">
-								<img src="{%static 'assets/images/counter/counter1.png' %}" alt="counter-icon" />
-							</div><!--/.statistics-img-->
-							<div class="statistics-content">
-								<div class="counter">2556</div>
-								<h3>days worked</h3>
-							</div><!--/.statistics-content-->
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-img">
-								<img src="{% static 'assets/images/counter/counter2.png'%}" alt="counter-icon" />
-							</div><!--/.statistics-img-->
-							<div class="statistics-content">
-								<div class="counter">326</div>
-								<h3>project finished</h3>
-							</div><!--/.statistics-content-->
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-img">
-								<img src="{% static 'assets/images/counter/counter3.png'%}" alt="counter-icon" />
-							</div><!--/.statistics-img-->
-							<div class="statistics-content">
-								<div class="counter">1526</div>
-								<h3>coffee cup</h3>
-							</div><!--/.statistics-content-->
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-img">
-								<img src="{%static 'assets/images/counter/counter4.png'%} " alt="counter-icon" />
-							</div><!--/.statistics-img-->
-							<div class="statistics-content">
-								<div class="counter">856</div>
-								<h3>client satisfied</h3>
-							</div><!--/.statistics-content-->
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-				</div><!--/.statistics-counter-->	
-			</div><!--/.container-->
-		</section><!--/.statistics-->
-		<!--statistics end--> {% endcomment %}
-		
-		<!--we-do start -->
-		<section  class="we-do">
-			<div class="container">
-				<div class="we-do-details">
-					<div class="section-header text-center">
-						<h2>Nos Valeurs</h2>
-					   <p>
-						Construire une richesse à travers l'autonomisation des entrepreneurs et des personnes. Productivité, travail intelligent, displine des résultats, patience, cohérence, transparence et authenticité.Elles nous permettent d’être un véritable partenaire de confiance pour nos clients
-						</p>
-					</div><!--/.section-header-->
-					<div class="we-do-carousel">
-						<div class="row">
-							<div class="col-sm-3 col-xs-12">
-								<div class="single-we-do-box text-center">
-									<div class="we-do-description">
-										<div class="we-do-info">
-											<div class="we-do-img">
-												<img src="{%static 'assets/images/home/consultency.png'%}" alt="image of consultency" />
-											</div><!--/.we-do-img-->
-											<div class="we-do-topics">
-												<h2>
-													<a href="#">
-														L'honnêteté
-													</a>
-												</h2>
-											</div><!--/.we-do-topics-->
-										</div><!--/.we-do-info-->
-										<div class="we-do-comment">
-											<p>
-												L'honnêteté et de normes éthiques élevées dans toutes les transactions commerciales
-											</p>
-										</div><!--/.we-do-comment-->
-									</div><!--/.we-do-description-->
-								</div><!--/.single-we-do-box-->
-							</div><!--/.col-->
-							<div class="col-sm-3 col-xs-12">
-								<div class="single-we-do-box text-center">
-									<div class="we-do-description">
-										<div class="we-do-info">
-											<div class="we-do-img">
-												<img src="{%static 'assets/images/home/busisness_grow.png'%}" alt="image of business" />
-											</div><!--/.we-do-img-->
-											<div class="we-do-topics">
-												<h2>
-													<a href="#">
-														Le respect 
-													</a>
-												</h2>
-											</div><!--/.we-do-topics-->
-										</div><!--/.we-do-info-->
-										<div class="we-do-comment">
-											<p>
-												Traiter les clients, partenaires, fournisseurs, employés et autres avec respect et courtoisie.
-											</p>
-										</div><!--/.we-do-comment-->
-									</div><!--/.we-do-description-->
-								</div><!--/.single-we-do-box-->
-							</div><!--/.col-->
-							<div class="col-sm-3 col-xs-12">
-								<div class="single-we-do-box text-center">
-									<div class="we-do-description">
-										<div class="we-do-info">
-											<div class="we-do-img">
-												<img src="{%static 'assets/images/home/busisness_grow.png'%}" alt="image of business" />
-											</div><!--/.we-do-img-->
-											<div class="we-do-topics">
-												<h2>
-													<a href="#">
-														La confidentialité
-													</a>
-												</h2>
-											</div><!--/.we-do-topics-->
-										</div><!--/.we-do-info-->
-										<div class="we-do-comment">
-											<p>Protéger les informations confidentielles et celles de nos clients, partenaires, fournisseurs et employés.</p>
-										</div><!--/.we-do-comment-->
-									</div><!--/.we-do-description-->
-								</div><!--/.single-we-do-box-->
-							</div><!--/.col-->
-							<div class="col-sm-3 col-xs-12">
-								<div class="single-we-do-box text-center">
-									<div class="we-do-description">
-										<div class="we-do-info">
-											<div class="we-do-img">
-												<img src="{%static 'assets/images/home/support-logo.png'%}" alt="image of support" />
-											</div><!--/.we-do-img-->
-											<div class="we-do-topics">
-												<h2>
-													<a href="#">
-														L'innovation
-													</a>
+{% comment %}
+<!--statistics start-->
+<section class="statistics">
+	<div class="container">
+		<div class="statistics-counter">
+			<div class="col-md-3 col-sm-6">
+				<div class="single-ststistics-box">
+					<div class="statistics-img">
+						<img
+							src="{%static 'assets/images/counter/counter1.png' %}"
+							alt="counter-icon"
+						/>
+					</div>
+					<!--/.statistics-img-->
+					<div class="statistics-content">
+						<div class="counter">2556</div>
+						<h3>days worked</h3>
+					</div>
+					<!--/.statistics-content-->
+				</div>
+				<!--/.single-ststistics-box-->
+			</div>
+			<!--/.col-->
+			<div class="col-md-3 col-sm-6">
+				<div class="single-ststistics-box">
+					<div class="statistics-img">
+						<img
+							src="{% static 'assets/images/counter/counter2.png'%}"
+							alt="counter-icon"
+						/>
+					</div>
+					<!--/.statistics-img-->
+					<div class="statistics-content">
+						<div class="counter">326</div>
+						<h3>project finished</h3>
+					</div>
+					<!--/.statistics-content-->
+				</div>
+				<!--/.single-ststistics-box-->
+			</div>
+			<!--/.col-->
+			<div class="col-md-3 col-sm-6">
+				<div class="single-ststistics-box">
+					<div class="statistics-img">
+						<img
+							src="{% static 'assets/images/counter/counter3.png'%}"
+							alt="counter-icon"
+						/>
+					</div>
+					<!--/.statistics-img-->
+					<div class="statistics-content">
+						<div class="counter">1526</div>
+						<h3>coffee cup</h3>
+					</div>
+					<!--/.statistics-content-->
+				</div>
+				<!--/.single-ststistics-box-->
+			</div>
+			<!--/.col-->
+			<div class="col-md-3 col-sm-6">
+				<div class="single-ststistics-box">
+					<div class="statistics-img">
+						<img
+							src="{%static 'assets/images/counter/counter4.png'%} "
+							alt="counter-icon"
+						/>
+					</div>
+					<!--/.statistics-img-->
+					<div class="statistics-content">
+						<div class="counter">856</div>
+						<h3>client satisfied</h3>
+					</div>
+					<!--/.statistics-content-->
+				</div>
+				<!--/.single-ststistics-box-->
+			</div>
+			<!--/.col-->
+		</div>
+		<!--/.statistics-counter-->
+	</div>
+	<!--/.container-->
+</section>
+<!--/.statistics-->
+<!--statistics end-->
+{% endcomment %}
 
-												</h2>
-											</div><!--/.we-do-topics-->
-										</div><!--/.we-do-info-->
-										<div class="we-do-comment">
-											<p>
-												Cultiver l'esprit d'entreprise est un moteur de croissance, de succès et de progrès.
-											</p>
-										</div><!--/.we-do-comment-->
-									</div><!--/.we-do-description-->
-								</div><!--/.single-we-do-box-->
-							</div><!--/.col-->
-						</div><!--/.row-->
-					</div><!--/.we-do-carousel-->
-				</div><!--/.we-do-details-->
-			</div><!--/.container-->
+<!--we-do start -->
+<section class="we-do">
+	<div class="container">
+		<div class="we-do-details">
+			<div class="section-header text-center">
+				<h2>Nos Valeurs</h2>
+				<p>
+					Construire une richesse à travers l'autonomisation des entrepreneurs
+					et des personnes. Productivité, travail intelligent, displine des
+					résultats, patience, cohérence, transparence et authenticité.Elles
+					nous permettent d’être un véritable partenaire de confiance pour nos
+					clients
+				</p>
+			</div>
+			<!--/.section-header-->
+			<div class="we-do-carousel">
+				<div class="row">
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-we-do-box text-center">
+							<div class="we-do-description">
+								<div class="we-do-info">
+									<div class="we-do-img">
+										<img
+											src="{%static 'assets/images/home/consultency.png'%}"
+											alt="image of consultency"
+										/>
+									</div>
+									<!--/.we-do-img-->
+									<div class="we-do-topics">
+										<h2>
+											<a href="#"> L'honnêteté </a>
+										</h2>
+									</div>
+									<!--/.we-do-topics-->
+								</div>
+								<!--/.we-do-info-->
+								<div class="we-do-comment">
+									<p>
+										L'honnêteté et de normes éthiques élevées dans toutes les
+										transactions commerciales
+									</p>
+								</div>
+								<!--/.we-do-comment-->
+							</div>
+							<!--/.we-do-description-->
+						</div>
+						<!--/.single-we-do-box-->
+					</div>
+					<!--/.col-->
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-we-do-box text-center">
+							<div class="we-do-description">
+								<div class="we-do-info">
+									<div class="we-do-img">
+										<img
+											src="{%static 'assets/images/home/busisness_grow.png'%}"
+											alt="image of business"
+										/>
+									</div>
+									<!--/.we-do-img-->
+									<div class="we-do-topics">
+										<h2>
+											<a href="#"> Le respect </a>
+										</h2>
+									</div>
+									<!--/.we-do-topics-->
+								</div>
+								<!--/.we-do-info-->
+								<div class="we-do-comment">
+									<p>
+										Traiter les clients, partenaires, fournisseurs, employés et
+										autres avec respect et courtoisie.
+									</p>
+								</div>
+								<!--/.we-do-comment-->
+							</div>
+							<!--/.we-do-description-->
+						</div>
+						<!--/.single-we-do-box-->
+					</div>
+					<!--/.col-->
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-we-do-box text-center">
+							<div class="we-do-description">
+								<div class="we-do-info">
+									<div class="we-do-img">
+										<img
+											src="{%static 'assets/images/home/busisness_grow.png'%}"
+											alt="image of business"
+										/>
+									</div>
+									<!--/.we-do-img-->
+									<div class="we-do-topics">
+										<h2>
+											<a href="#"> La confidentialité </a>
+										</h2>
+									</div>
+									<!--/.we-do-topics-->
+								</div>
+								<!--/.we-do-info-->
+								<div class="we-do-comment">
+									<p>
+										Protéger les informations confidentielles et celles de nos
+										clients, partenaires, fournisseurs et employés.
+									</p>
+								</div>
+								<!--/.we-do-comment-->
+							</div>
+							<!--/.we-do-description-->
+						</div>
+						<!--/.single-we-do-box-->
+					</div>
+					<!--/.col-->
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-we-do-box text-center">
+							<div class="we-do-description">
+								<div class="we-do-info">
+									<div class="we-do-img">
+										<img
+											src="{%static 'assets/images/home/support-logo.png'%}"
+											alt="image of support"
+										/>
+									</div>
+									<!--/.we-do-img-->
+									<div class="we-do-topics">
+										<h2>
+											<a href="#"> L'innovation </a>
+										</h2>
+									</div>
+									<!--/.we-do-topics-->
+								</div>
+								<!--/.we-do-info-->
+								<div class="we-do-comment">
+									<p>
+										Cultiver l'esprit d'entreprise est un moteur de croissance,
+										de succès et de progrès.
+									</p>
+								</div>
+								<!--/.we-do-comment-->
+							</div>
+							<!--/.we-do-description-->
+						</div>
+						<!--/.single-we-do-box-->
+					</div>
+					<!--/.col-->
+				</div>
+				<!--/.row-->
+			</div>
+			<!--/.we-do-carousel-->
+		</div>
+		<!--/.we-do-details-->
+	</div>
+	<!--/.container-->
+</section>
+<!--/.we-do-->
+<!--we-do end-->
 
-		</section><!--/.we-do-->
-		<!--we-do end-->
-		
-		<!-- testemonial Start -->
-		<section   class="testemonial">
-			<div class="container">
-				<div class="section-header text-center">
-					<h2>
-						<span>
-							what our client say about us
+<!-- testemonial Start -->
+<section class="testemonial">
+	<div class="container">
+		<div class="section-header text-center">
+			<h2>
+				<span> what our client say about us </span>
+			</h2>
+		</div>
+		<!--/.section-header-->
+		<div class="owl-carousel owl-theme" id="testemonial-carousel">
+			<div class="home1-testm item">
+				<div class="home1-testm-single text-center">
+					<div class="home1-testm-img">
+						<img
+							src="{%static 'assets/images/client/testimonial1.jpg'%}"
+							alt="img"
+						/>
+					</div>
+					<!--/.home1-testm-img-->
+					<div class="home1-testm-txt">
+						<span class="icon section-icon">
+							<i class="fa fa-quote-left" aria-hidden="true"></i>
 						</span>
-					</h2>
-				</div><!--/.section-header-->
-				<div class="owl-carousel owl-theme" id="testemonial-carousel">
-					<div class="home1-testm item">
-						<div class="home1-testm-single text-center">
-							<div class="home1-testm-img">
-								<img src="{%static 'assets/images/client/testimonial1.jpg'%}" alt="img"/>
-							</div><!--/.home1-testm-img-->
-							<div class="home1-testm-txt">
-								<span class="icon section-icon">
-									<i class="fa fa-quote-left" aria-hidden="true"></i>
-								</span>
-								<p>
-									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
-								</p>
-								<h3>
-									<a href="#">
-										kevin watson
-									</a>
-								</h3>
-								<h4>CEO, Kingston</h4>
-							</div><!--/.home1-testm-txt-->	
-						</div><!--/.home1-testm-single-->
-					</div><!--/.item-->
-					<div class="home1-testm item">
-						<div class="home1-testm-single text-center">
-							<div class="home1-testm-img">
-								<img src="{%static 'assets/images/client/testimonial2.jpg'%}" alt="img"/>
-							</div><!--/.home1-testm-img-->
-							<div class="home1-testm-txt">
-								<span class="icon section-icon">
-									<i class="fa fa-quote-left" aria-hidden="true"></i>
-								</span>
-								<p>
-									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
-								</p>
-								<h3>
-									<a href="#">
-										kevin watson
-									</a>
-								</h3>
-								<h4>CEO, Kingston</h4>
-							</div><!--/.home1-testm-txt-->	
-						</div><!--/.home1-testm-single-->
-					</div><!--/.item-->
-					<div class="home1-testm item">
-						<div class="home1-testm-single text-center">
-							<div class="home1-testm-img">
-								<img src="{%static 'assets/images/client/testimonial1.jpg'%}" alt="img"/>
-							</div><!--/.home1-testm-img-->
-							<div class="home1-testm-txt">
-								<span class="icon section-icon">
-									<i class="fa fa-quote-left" aria-hidden="true"></i>
-								</span>
-								<p>
-									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
-								</p>
-								<h3>
-									<a href="#">
-										kevin watson
-									</a>
-								</h3>
-								<h4>CEO, Kingston</h4>
-							</div><!--/.home1-testm-txt-->	
-						</div><!--/.home1-testm-single-->
-					</div><!--/.item-->
-				</div><!--/.testemonial-carousel-->
-			</div><!--/.container-->
+						<p>
+							Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+							minim veniam..
+						</p>
+						<h3>
+							<a href="#"> kevin watson </a>
+						</h3>
+						<h4>CEO, Kingston</h4>
+					</div>
+					<!--/.home1-testm-txt-->
+				</div>
+				<!--/.home1-testm-single-->
+			</div>
+			<!--/.item-->
+			<div class="home1-testm item">
+				<div class="home1-testm-single text-center">
+					<div class="home1-testm-img">
+						<img
+							src="{%static 'assets/images/client/testimonial2.jpg'%}"
+							alt="img"
+						/>
+					</div>
+					<!--/.home1-testm-img-->
+					<div class="home1-testm-txt">
+						<span class="icon section-icon">
+							<i class="fa fa-quote-left" aria-hidden="true"></i>
+						</span>
+						<p>
+							Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+							minim veniam..
+						</p>
+						<h3>
+							<a href="#"> kevin watson </a>
+						</h3>
+						<h4>CEO, Kingston</h4>
+					</div>
+					<!--/.home1-testm-txt-->
+				</div>
+				<!--/.home1-testm-single-->
+			</div>
+			<!--/.item-->
+			<div class="home1-testm item">
+				<div class="home1-testm-single text-center">
+					<div class="home1-testm-img">
+						<img
+							src="{%static 'assets/images/client/testimonial1.jpg'%}"
+							alt="img"
+						/>
+					</div>
+					<!--/.home1-testm-img-->
+					<div class="home1-testm-txt">
+						<span class="icon section-icon">
+							<i class="fa fa-quote-left" aria-hidden="true"></i>
+						</span>
+						<p>
+							Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+							minim veniam..
+						</p>
+						<h3>
+							<a href="#"> kevin watson </a>
+						</h3>
+						<h4>CEO, Kingston</h4>
+					</div>
+					<!--/.home1-testm-txt-->
+				</div>
+				<!--/.home1-testm-single-->
+			</div>
+			<!--/.item-->
+		</div>
+		<!--/.testemonial-carousel-->
+	</div>
+	<!--/.container-->
+</section>
+<!--/.testimonial-->
+<!-- testemonial End -->
 
-		</section><!--/.testimonial-->	
-		<!-- testemonial End -->
-
-		
-		
 {%endblock%}

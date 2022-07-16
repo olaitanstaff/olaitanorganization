@@ -553,7 +553,7 @@ html,body{
 /*we-do-description*/
 .single-we-do-box{
 	background:#fff;
-	min-height: 345px
+	height: 345px
 }
 /* we-do-info */
 .we-do-info {
@@ -670,9 +670,9 @@ html,body{
 	margin-top: 120px;
 }
 .about-ceo-text {
-	width: 45%;
+	width: 60%;
 	/* height: 100vh; */
-	margin-top: 10px;
+	/* margin-top: 10px; */
 }
 .about-ceo-text p {
 
@@ -686,7 +686,7 @@ html,body{
 .about-ceo-img {
 	position:relative;
 	overflow: hidden;
-	top:5px;
+	top:0;
 	/* height: 100vh; */
 	border-radius: 8px;
 	/* box-shadow: 0 0 5px rgba(0,0,0,0.4); */
@@ -707,56 +707,226 @@ html,body{
 }
 .about-ceo-img img {
 	width: 100%;
-	height: 800px;
+	height: 450px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	/* height: 25%; */
 	/* border-radius: 8px; */
 }
 .project-btn {
 	position: relative;
-	bottom: 170px;
+	top: -60px;
 }
 /*-------------------------------------
 		Timeline
 --------------------------------------*/
-.main-timeline {
-	position: relative;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	padding: 5rem;
-	margin: 0 auto 1rem auto;
-	overflow: hidden;
+.hdOliatan h2{
+	text-align: center;
+	margin-top: 40px;
+	color: #44454f;
+	font-size: 30px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	text-transform: capitalize;
 }
-
-.main-timeline::after{
-	content: '';
-	position:absolute;
-	top: 0;
-	left:50%;
-	margin-left: -2px;
-	border-right: 2px solid #4b546f;
+/* The actual timeline (the vertical ruler) */
+.main-timeline-histroy {
+	position: relative;
+	margin:0 auto;
+	/* margin-bottom: 149px; */
+	max-width: 1400px;
 	height: 100%;
-	display: block;
+	padding-bottom: 100px;
+	/* background-color: #000; */
+	margin-top: -120px;
+
 }
-.timeline-row {
-	padding-left: 50%;
-	position: relative;
-	margin-bottom: 30px;
-}
-.timeline-row .timeline-content {
+/* The actual timeline (the vertical ruler) */
+.main-timeline-histroy::after{
+	content: "";
 	position: absolute;
-	right: 50%;
-	top: 15px;
-	text-align: right;
-	margin-right: 20px;
-	font-size: 1.5rem;
+	width: 6px;
+	background-color: #5549af;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+	height: 100%;
 }
+.timeline-content {
+	position: relative;
+	padding: 20px 40px;
+	/* margin-top: 60px; */
+	/* width: 100%; */
+	/* background-color:green; */
+	margin:160px; 
+}
+ .main-timeline-histroy .timeline-content:nth-child(2n) .timeline-image img{  
+	float: left;
+	margin-right:0px; 
+	/* padding-right: 75px; */
+	/* margin-bottom: 10px; */
+	/* width: 40px;  */
+	/* background-color: blue; */
+ }  
+ .main-timeline-histroy .timeline-content:nth-child(2n+1) .timeline-image img{
+ 	float: right;
+	margin-left: 0px;
+ 	/* width: 70px;  */
+ 	/* background: green; */
+ }
+ .main-timeline-histroy .timeline-content:nth-child(2n+1) .content{
+	/* display: flex; */
+	position: relative;
+	/* top: -100px; */
+ 	float: left;
+	margin-left: 15px;
+	/* margin-bottom: 10px; */
+ 	width: 35%;
+ 	/* background-color: blue;  */
+ }
+.main-timeline-histroy .timeline-content:nth-child(2n+1) .content::after{
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px; 
+	right: -113px;
+	background-color: #6967d1;
+	border: 4px solid #6967d1;
+	top: 15px;
+	border-radius: 50%;
+	/* margin-left: 25%; */
+	z-index: 1;
+}
+ .main-timeline-histroy .timeline-content:nth-child(2n) .content{
+	position: relative;
+ 	float: right;
+ 	width: 35%;
+	margin-right: 15px;
+ 	/* background-color: green; */
+ } 
+ 
+
+ .main-timeline-histroy .timeline-content:nth-child(2n) .content::before{
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: -113px;
+	background-color: #6967d1;
+	border: 4px solid #6967d1;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+ }
+ .content .year {
+	font-size: 30px;
+	font-weight: 700;
+	/* letter-spacing: 0.2px; */
+	/* text-indent: 20px; */
+	color: #44454f;
+	font-family: 'Playfair Display', serif;
+	padding-bottom: 200px;
+	
+ }
+ .content .description {
+	font-weight: 300;
+	color: #888;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.2;
+	text-align: justify;
+	margin: 0;
+ }
+ .timeline-image .img{
+	width: 250px;
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+ }
+
+ /*--------------------------------*/
+    /* main-timeline objective */
+ /*--------------------------------*/
+ /*main-timeline*/
+ .about-vission-content {
+ 	padding: 90px 0 0;
+ }
+
+ .main-timeline-objective {
+ 	position: relative;
+ 	margin-top: 39px;
+ 	transition: all 0.4s ease 0s;
+ }
+
+ .main-timeline-objective:before {
+ 	content: "";
+ 	width: 1px;
+ 	background: #dbdbdb;
+ 	position: absolute;
+ 	top: 5.2%;
+ 	left: 14.5%;
+ 	height: 80%;
+ }
+
+ .xtra-timeline.main-timeline-objective:before {
+ 	display: none;
+ 	/* content: "";
+    width:1px;
+    background: #dbdbdb;
+    position: absolute;
+    top: 8.2%;
+    left: 0.5%;
+    height: 72%; */
+
+ }
+
+ .main-timeline-objective .timeline-objective {
+ 	position: relative;
+ 	margin-bottom: 25px;
+ 	left: -15px;
+ }
+
+ .main-timeline-objective .timeline-content-objective {
+ 	border-radius: 5px;
+ 	transition: all 0.3s ease 0s;
+ }
+
+ .timeline-content-objective span>i {
+ 	display: inline-block;
+ 	color: #7370d8;
+ 	position: relative;
+ 	top: 15px;
+ 	left: -9px;
+ 	background: #fff;
+ }
+
+
+ .experience-time h3 {
+ 	font-size: 16px;
+ 	color: #4d4e54;
+ 	font-family: 'Playfair Display', serif;
+ 	text-transform: capitalize;
+ 	font-weight: 600;
+ 	margin-top: 14px;
+ }
+
+ .main-timeline-objective .description,
+ .xtra-timeline.main-timeline-objective .description-objective {
+ 	font-size: 14px;
+ 	color: #888;
+ 	margin-left: 36px;
+ 	margin-top: -7px;
+ 	max-width: 390px;
+ }
+
+ .main-timeline-objective .timeline-objective.timeline-ml-20 {
+ 	margin-left: 20px;
+ }
 /*-------------------------------------
 		History
 --------------------------------------*/
 .container-histoire {
 	padding: 30px;
-	margin: 100px 100px 100px 0;
 }
 .ceo-histoire-right {
 	float: right;
@@ -826,6 +996,7 @@ html,body{
 /*.service-txt*/
 .service-single {
 	max-width: 304px;
+	height: 250px;
     margin: 0 auto;
    	margin-bottom: 15px;
 	-webkit-transition: .5s; 
@@ -866,6 +1037,7 @@ a:focus.service-btn{
 	
 	margin-top: 50px;
 	margin-bottom: 50px;
+	/* height: 321px; */
 }
 .aproache img  {
 	display: block;
@@ -886,6 +1058,7 @@ a:focus.service-btn{
 	margin-bottom: 24px;
 	margin-left: 100px;
 	margin-right: 100px;
+	margin-bottom: 50px;
 	/* width: 300px; */
 }
 .service-title h1 {

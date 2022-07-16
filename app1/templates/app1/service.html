@@ -1,243 +1,310 @@
 {% extends 'app1/base.html' %}
 {%load static %}
 {%block content%}
-		<!--about-part start-->
-		<section class="about-part service-part">
-			<div class="container">
-				<div class="about-part-details text-center"> 
-					<h2>service</h2>
-					<div class="about-part-content">
-						<div class="breadcrumbs">
-							<div class="container">
-								<ol class="breadcrumb">
-								  <li><a href="{% url 'app1:index'%}">Accueil</a><span>//</span></li>
-								  <li><a href="{% url 'app1:service'%}">service</a></li>
-								</ol><!--/.breadcrumb-->
-							</div><!--/.container-->
-						</div><!--/.breadcrumbs-->
-					</div><!--/.about-part-content-->
-				</div><!--/.about-part-details-->	
-			</div><!--/.container-->
-		</section><!--/.about-part-->
-		<!--about-part end-->
-
-		<!--service start-->
-		<section  class="service">
-				<div class="container">
-					<div class="service-details">
-						<div class="section-header text-center">
-							<h2>Nos Services</h2>
-							<p>
-								Diligence, fraicheur et expérience à votre service pour votre plus grande satisfaction quel que soit votre secteur.
-							</p>
-						</div><!--/.section-header-->
-						<div class="aproache">
-							<div><img src="{%static 'assets/images/service/approach.png'%}"></div>
-							<div>
-								<h1>L'approche D'Olaitan</h1>
-							</div>
-						</div><!-- approche-->
-						<div class="service-content-one">
-							<div class="row">
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{%static 'assets/images/service/service1.png'%}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Formation Professionnelle</a>
-											</h2>
-											{% comment %} <p>
-												Boostez la performance de vos équipes en enrichissant leurs compétences
-											</p>  {% endcomment %}
-											 <a href="#c1" class="service-btn">
-												learn more <span>&#x002B</span>
-											</a> 
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{% static 'assets/images/service/service2.png'%}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Conseil De Gestion</a>
-											</h2>
-											{% comment %} <p>
-												Construisons ensemble les fondations et la gestion de votre entreprise
-											</p> {% endcomment %}
-											<a href="#c2" class="service-btn">
-												learn more <span>&#x002B</span>
-											</a> 
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{%static 'assets/images/service/service3.png'%}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Productions De Films</a>
-											</h2>
-											{% comment %} <p>
-												Conception et de la réalisation des œuvres audiovisuelles telles que les films  et les vidéos 
-											</p> {% endcomment %}
-											<a href="#c3" class="service-btn">
-												learn more <span>&#x002B</span>
-											</a> 
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-							</div><!--/.row-->
-						</div><!--/.service-content-one-->
-						<div class="service-content-two">
-							<div class="row">
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{%static 'assets/images/service/service4.png'%}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Assistances Techniques En Trasport Et Logistique</a>
-											</h2>
-											{% comment %} <p>
-											Nous optimisons vos processus de commande ou votre stockage, et évaluons des potentiels d’économie
-											</p> {% endcomment %}
-											<a href="#c4" class="service-btn">
-												learn more <span>&#x002B</span>
-											</a> 
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{%static 'assets/images/service/service5.png'%}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Imports Et Exports </a>
-											</h2>
-											{% comment %} <p>
-												Pour aider l’entreprise à acquérir des produits en provenance de l'étranger ou à vendre des produits nationaux à l'étranger. 
-											</p> {% endcomment %}
-											<a href="#c5" class="service-btn">
-												learn more <span>&#x002B</span>
-											</a> 
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{%static 'assets/images/service/service6.png'%}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Bureau D'études</a>
-											</h2>
-											{% comment %} <p>
-												Pour orienter et justifier les choix structurels et techniques vos projets. 
-											</p> {% endcomment %}
-											<a href="#c6" class="service-btn">
-												learn more <span>&#x002B</span>
-											</a> 
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-							</div><!--/.row-->
-						</div><!--/.service-content-two-->
-					</div><!--/.service-details-->
-				</div><!--/.container-->
-		</section><!--/.service-->
-		<!--service end-->
-		<div class="aproache">
-			<div><img src="{%static 'assets/images/service/approach.png'%}"></div>
-			<div>
-				<h1>Nos offres de services</h1>
+<!--about-part start-->
+<section class="about-part service-part">
+	<div class="container">
+		<div class="about-part-details text-center">
+			<h2>service</h2>
+			<div class="about-part-content">
+				<div class="breadcrumbs">
+					<div class="container">
+						<ol class="breadcrumb">
+							<li><a href="{% url 'app1:index'%}">Accueil</a><span>//</span></li>
+							<li><a href="{% url 'app1:service'%}">service</a></li>
+						</ol>
+						<!--/.breadcrumb-->
+					</div>
+					<!--/.container-->
+				</div>
+				<!--/.breadcrumbs-->
 			</div>
-		</div><!-- approche-->
-		<!-- Services details -->
-		<section class="service-offered">
-			<div class="container">
-				<div class="single-service-offer">
-					<div class="service-title">
-						<h1>Formation Professionnelle</h1>
+			<!--/.about-part-content-->
+		</div>
+		<!--/.about-part-details-->
+	</div>
+	<!--/.container-->
+</section>
+<!--/.about-part-->
+<!--about-part end-->
+
+<!--service start-->
+<section class="service">
+	<div class="container">
+		<div class="service-details">
+			<div class="section-header text-center">
+				<h2>Nos Services</h2>
+				<p>
+					Diligence, fraicheur et expérience à votre service pour votre plus grande satisfaction quel que soit
+					votre secteur.
+				</p>
+			</div>
+			<!--/.section-header-->
+			<div class="aproache">
+				<div><img src="{%static 'assets/images/service/approach.png'%}"></div>
+				<div>
+					<h1>L'approche D'Olaitan</h1>
+				</div>
+			</div><!-- approche-->
+			<div class="service-content-one">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="{%static 'assets/images/service/service1.png'%}" alt="image of service" />
+							</div>
+							<!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">Formation Professionnelle</a>
+								</h2>
+								{% comment %} <p>
+									Boostez la performance de vos équipes en enrichissant leurs compétences
+								</p> {% endcomment %}
+								<a href="#c1" class="service-btn">
+									learn more <span>&#x002B</span>
+								</a>
+							</div>
+							<!--/.service-txt-->
+						</div>
+						<!--/.service-single-->
 					</div>
-					<div class="service-text-detail" id="c1">
-						<p>Permet d’accroître le taux de rendement de l’entreprise par l’apprentissage de nouvelles connaissances aux employés pour favoriser l’optimisation de leurs compétences .
-							Permettre à chaque employé d’avoir les ressources intellectuelles nécessaires pour être performant dans son poste.
-							Disposer d’une bonne réputation car l’entreprise sera connue sur le marché pour l’amélioration continuelle des compétences. 
-							Développer des compétences interne dans l’entreprise pour réduire les coûts dû au recrutement et à l’intégration de nouveaux salariés
-						</p>
-					</div> <!--single-service-detail -->
-				</div><!--single-service-0ffer -->
-				
-				<div class="single-service-offer">
-					<div class="service-text-detail" id="c2">
-						<p>Pour les choix stratégiques de l'entreprise,
-							Pour apporter des solutions à des entreprises en difficultés, qui changent ou qui veulent améliorer leur performance : faire mieux, plus rapidement et à moindre coût. 
-							Pour une bonne gouvernance
-							Aider l’entreprise à identifier les opportunités et à résoudre les problèmes spécifiques au sein de sa direction
-							L’entreprise en conseil de gestion, aide à la prise de décision, guide la direction pour mettre en œuvre les meilleures pratiques de gestion et se concentre sur les demandes liées à la direction de l’entreprise.
-							Favoriser un Bon système de gouvernance de management.	
-							</p>
-					</div> <!--single-service-detail -->
-					<div class="service-title">
-						<h1>Conseil De Gestion</h1>
+					<!--/.col-->
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="{% static 'assets/images/service/service2.png'%}" alt="image of service" />
+							</div>
+							<!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">Conseil De Gestion</a>
+								</h2>
+								{% comment %} <p>
+									Construisons ensemble les fondations et la gestion de votre entreprise
+								</p> {% endcomment %}
+								<a href="#c2" class="service-btn">
+									learn more <span>&#x002B</span>
+								</a>
+							</div>
+							<!--/.service-txt-->
+						</div>
+						<!--/.service-single-->
 					</div>
-				</div><!--single-service-0ffer -->
-
-
-				<div class="single-service-offer">
-					<div class="service-title">
-						<h1>Productions De Films</h1>
+					<!--/.col-->
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="{%static 'assets/images/service/service3.png'%}" alt="image of service" />
+							</div>
+							<!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">Productions De Films</a>
+								</h2>
+								{% comment %} <p>
+									Conception et de la réalisation des œuvres audiovisuelles telles que les films et
+									les vidéos
+								</p> {% endcomment %}
+								<a href="#c3" class="service-btn">
+									learn more <span>&#x002B</span>
+								</a>
+							</div>
+							<!--/.service-txt-->
+						</div>
+						<!--/.service-single-->
 					</div>
-					<div class="service-text-detail" id="c3">
-						<p>Pour la conception et de la réalisation des œuvres audiovisuelles telles que les films, les vidéos
-						</p>
-					</div> <!--single-service-detail -->
-				</div><!--single-service-0ffer -->
-
-				<div class="single-service-offer">
-					<div class="service-text-detail" id="c4">
-						<p>Pour nous occuper de toutes les actions liées à la chaîne logistique de l'entreprise, de la préparation à la livraison en respectant le cahier des charges de manière précise.
-						</p>
-					</div> <!--single-service-detail -->
-					<div class="service-title">
-						<h1>Assistances Techniques En Trasport Et Logistique</h1>
+					<!--/.col-->
+				</div>
+				<!--/.row-->
+			</div>
+			<!--/.service-content-one-->
+			<div class="service-content-two">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="{%static 'assets/images/service/service4.png'%}" alt="image of service" />
+							</div>
+							<!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">Assistances Techniques En Trasport Et Logistique</a>
+								</h2>
+								{% comment %} <p>
+									Nous optimisons vos processus de commande ou votre stockage, et évaluons des
+									potentiels d’économie
+								</p> {% endcomment %}
+								<a href="#c4" class="service-btn">
+									learn more <span>&#x002B</span>
+								</a>
+							</div>
+							<!--/.service-txt-->
+						</div>
+						<!--/.service-single-->
 					</div>
-				</div><!--single-service-0ffer -->
-
-				<div class="single-service-offer">
-					<div class="service-title">
-						<h1>Imports Et Exports</h1>
+					<!--/.col-->
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="{%static 'assets/images/service/service5.png'%}" alt="image of service" />
+							</div>
+							<!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">Imports Et Exports </a>
+								</h2>
+								{% comment %} <p>
+									Pour aider l’entreprise à acquérir des produits en provenance de l'étranger ou à
+									vendre des produits nationaux à l'étranger.
+								</p> {% endcomment %}
+								<a href="#c5" class="service-btn">
+									learn more <span>&#x002B</span>
+								</a>
+							</div>
+							<!--/.service-txt-->
+						</div>
+						<!--/.service-single-->
 					</div>
-					<div class="service-text-detail" id="c5">
-						<p>Pour aider l’entreprise à acquérir des produit en provenance de l'étranger ou à vendre des produits nationaux à l'étranger.
-						</p>
-					</div> <!--single-service-detail -->
-					
-				</div><!--single-service-0ffer -->
-
-				<div class="single-service-offer" id="c6">
-					<div class="service-text-detail">
-						<p>Pour orienter et justifier les choix structurels et techniques d'un projet au sein de l’entreprise que ce soit dans le domaine des affaires, du management de l’audit ou de  l’architecture.
-						</p>
-					</div> <!--single-service-detail -->
-					<div class="service-title">
-						<h1>Bureau D'études</h1>
+					<!--/.col-->
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="{%static 'assets/images/service/service6.png'%}" alt="image of service" />
+							</div>
+							<!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">Bureau D'études</a>
+								</h2>
+								{% comment %} <p>
+									Pour orienter et justifier les choix structurels et techniques vos projets.
+								</p> {% endcomment %}
+								<a href="#c6" class="service-btn">
+									learn more <span>&#x002B</span>
+								</a>
+							</div>
+							<!--/.service-txt-->
+						</div>
+						<!--/.service-single-->
 					</div>
-				</div><!--single-service-0ffer -->
-				
-			</div> <!--service-container -->
+					<!--/.col-->
+				</div>
+				<!--/.row-->
+			</div>
+			<!--/.service-content-two-->
+		</div>
+		<!--/.service-details-->
+	</div>
+	<!--/.container-->
+</section>
+<!--/.service-->
+<!--service end-->
+<div class="aproache">
+	<div><img src="{%static 'assets/images/service/approach.png'%}"></div>
+	<div>
+		<h1>Nos offres de services</h1>
+	</div>
+</div><!-- approche-->
+<!-- Services details -->
+<section class="service-offered">
+	<div class="container">
+		<div class="single-service-offer" id="c1">
+			<div class="service-title">
+				<h1>Formation Professionnelle</h1>
+			</div>
+			<div class="service-text-detail">
+				<p>Permet d’accroître le taux de rendement de l’entreprise par l’apprentissage de nouvelles
+					connaissances aux employés pour favoriser l’optimisation de leurs compétences .
+					Permettre à chaque employé d’avoir les ressources intellectuelles nécessaires pour être performant
+					dans son poste.
+					Disposer d’une bonne réputation car l’entreprise sera connue sur le marché pour l’amélioration
+					continuelle des compétences.
+					Développer des compétences interne dans l’entreprise pour réduire les coûts dû au recrutement et à
+					l’intégration de nouveaux salariés
+				</p>
+			</div>
+			<!--single-service-detail -->
+		</div>
+		<!--single-service-0ffer -->
 
-		</section>
+		<div class="single-service-offer" id="c2">
+			<div class="service-text-detail">
+				<p>Pour les choix stratégiques de l'entreprise,
+					Pour apporter des solutions à des entreprises en difficultés, qui changent ou qui veulent améliorer
+					leur performance : faire mieux, plus rapidement et à moindre coût.
+					Pour une bonne gouvernance
+					Aider l’entreprise à identifier les opportunités et à résoudre les problèmes spécifiques au sein de
+					sa direction
+					L’entreprise en conseil de gestion, aide à la prise de décision, guide la direction pour mettre en
+					œuvre les meilleures pratiques de gestion et se concentre sur les demandes liées à la direction de
+					l’entreprise.
+					Favoriser un Bon système de gouvernance de management.
+				</p>
+			</div>
+			<!--single-service-detail -->
+			<div class="service-title">
+				<h1>Conseil De Gestion</h1>
+			</div>
+		</div>
+		<!--single-service-0ffer -->
 
-		{%endblock%}
+
+		<div class="single-service-offer" id="c3">
+			<div class="service-title">
+				<h1>Productions De Films</h1>
+			</div>
+			<div class="service-text-detail">
+				<p>Pour la conception et de la réalisation des œuvres audiovisuelles telles que les films, les vidéos
+				</p>
+			</div>
+			<!--single-service-detail -->
+		</div>
+		<!--single-service-0ffer -->
+
+		<div class="single-service-offer" id="c4">
+			<div class="service-text-detail">
+				<p>Pour nous occuper de toutes les actions liées à la chaîne logistique de l'entreprise, de la
+					préparation à la livraison en respectant le cahier des charges de manière précise.
+				</p>
+			</div>
+			<!--single-service-detail -->
+			<div class="service-title">
+				<h1>Assistances Techniques En Trasport Et Logistique</h1>
+			</div>
+		</div>
+		<!--single-service-0ffer -->
+
+		<div class="single-service-offer" id="c5">
+			<div class="service-title">
+				<h1>Imports Et Exports</h1>
+			</div>
+			<div class="service-text-detail">
+				<p>Pour aider l’entreprise à acquérir des produit en provenance de l'étranger ou à vendre des produits
+					nationaux à l'étranger.
+				</p>
+			</div>
+			<!--single-service-detail -->
+
+		</div>
+		<!--single-service-0ffer -->
+
+		<div class="single-service-offer" id="c6">
+			<div class="service-text-detail">
+				<p>Pour orienter et justifier les choix structurels et techniques d'un projet au sein de l’entreprise
+					que ce soit dans le domaine des affaires, du management de l’audit ou de l’architecture.
+				</p>
+			</div>
+			<!--single-service-detail -->
+			<div class="service-title">
+				<h1>Bureau D'études</h1>
+			</div>
+		</div>
+		<!--single-service-0ffer -->
+
+	</div>
+	<!--service-container -->
+
+</section>
+
+{%endblock%}

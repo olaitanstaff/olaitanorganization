@@ -1,0 +1,81 @@
+{% extends 'app1/base.html' %}
+{%load static %}
+{%block content%}
+<!--about-part start-->
+<section class="about-part service-part">
+    <div class="container">
+        <div class="about-part-details text-center">
+            <h2>service</h2>
+            <div class="about-part-content">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li><a href="{% url 'app1:index'%}">Accueil</a><span>//</span></li>
+                            <li><a href="{% url 'app1:service'%}">service</a></li>
+                        </ol>
+                        <!--/.breadcrumb-->
+                    </div>
+                    <!--/.container-->
+                </div>
+                <!--/.breadcrumbs-->
+            </div>
+            <!--/.about-part-content-->
+        </div>
+        <!--/.about-part-details-->
+    </div>
+    <!--/.container-->
+</section>
+<!--/.about-part-->
+<!--about-part end-->
+<!--section formation-->
+<section class="formation">
+    <div class="container">
+        <div class="service-details">
+            <div class="section-header-formation text-center">
+                <h2>formation PROFESSIONNELLE</h2>
+                <!-- <p> -->
+                <!-- Permet d’accroître le taux de rendement de l’entreprise par l’apprentissage de nouvelles -->
+                <!-- connaissances aux employés pour favoriser l’optimisation de leurs compétences .</p> -->
+                <!-- <p>Permettre à chaque -->
+                <!-- employé d’avoir les ressources intellectuelles nécessaires pour être performant dans son poste. </p> -->
+                <!-- <p> Disposer d’une bonne réputation car l’entreprise sera connue sur le marché pour l’amélioration -->
+                <!-- continuelle des compétences. Développer des compétences interne dans l’entreprise pour réduire les -->
+                <!-- coûts dû au recrutement et à l’intégration de nouveaux salariés. </p> -->
+                <!-- <p> Permet d’accroître le taux de rendement de l’entreprise par l’apprentissage de nouvelles -->
+                <!-- connaissances aux employés pour favoriser l’optimisation de leurs compétences.</p> -->
+                <!-- <p> Permettre à chaque -->
+                <!-- employé d’avoir les ressources intellectuelles nécessaires pour être performant dans son poste.</p> -->
+                <!-- <p> Disposer d’une bonne réputation car l’entreprise sera connue sur le marché pour l’amélioration -->
+                <!-- continuelle des compétences.</p> -->
+                <!-- <p> Développer des compétences interne dans l’entreprise pour réduire les -->
+                <!-- coûts dû au recrutement et à l’intégration de nouveaux salariés -->
+                <!-- </p> -->
+            </div>
+            <div class="row formation-body">
+                <div class="col-md-6 col-sm-12 formation-img">
+                    <img src="{%static 'assets/images/service/frm1.jpg'%}">
+                </div>
+                <div class="col-md-6 col-sm-12 formation-text">
+                    <!-- <h4>Notre objectif, votre épanouissement</h4> -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </p>
+                    <ul class="formationLi">
+                        <li><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Partage
+                            d'expérience</li>
+                        <li><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Développement de leadership
+                        </li>
+                        <li><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Management de la vie
+                            courante</li>
+                        <li><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Découverte de la destinée
+                            Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+</section>
+<!--section formation-->
+{%endblock%}

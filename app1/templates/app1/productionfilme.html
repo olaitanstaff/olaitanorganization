@@ -1,0 +1,84 @@
+{% extends 'app1/base.html' %}
+{%load static %}
+{%block content%}
+<!--about-part start-->
+<section class="about-part service-part">
+    <div class="container">
+        <div class="about-part-details text-center">
+            <h2>service</h2>
+            <div class="about-part-content">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li><a href="{% url 'app1:index'%}">Accueil</a><span>//</span></li>
+                            <li><a href="{% url 'app1:service'%}">service</a></li>
+                        </ol>
+                        <!--/.breadcrumb-->
+                    </div>
+                    <!--/.container-->
+                </div>
+                <!--/.breadcrumbs-->
+            </div>
+            <!--/.about-part-content-->
+        </div>
+        <!--/.about-part-details-->
+    </div>
+    <!--/.container-->
+</section>
+<!--/.about-part-->
+<!--about-part end-->
+<!--section formation-->
+<section class="formation">
+    <div class="container">
+        <div class="service-details">
+            <div class="section-header-formation text-center">
+                <h2>PRODUCTIONS DE FILMS</h2>
+            </div>
+            <div class="row formation-body">
+                <div class="col-md-6 col-sm-12 formation-img">
+                    <img src="{%static 'assets/images/service/pdf1.jpg'%}">
+                </div>
+                <div class="col-md-6 col-sm-12 formation-text">
+                    <!-- <h4>Notre objectif, votre épanouissement</h4> -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </p>
+                    <ul class="formationLi">
+                        <li><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>DIFFUSION SCIENTIFIQUE,
+                            JURIDIQUE, SOCIALE</li>
+                        <li><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>DOCUMENTAIRES
+                        </li>
+                        <li><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>SUCCESS STORIES
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="service-details"> -->
+        <!-- <div class="row formation-body"> -->
+        <!-- <div class="col-md-6 col-sm-12 formation-text"> -->
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut -->
+        <!-- labore et dolore magna -->
+        <!-- aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea -->
+        <!-- commodo consequat. -->
+        <!-- </p> -->
+        <!-- <ul class="formationLiCG"> -->
+        <!-- <li><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>ATELIERS PRATIQUES DE -->
+        <!-- CONCEPTION, D'INGENIERIES</li> -->
+        <!-- <li><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>VALORISATION DE -->
+        <!-- PROJETS/PROGRAMMES DANS LE SECTEUR -->
+        <!-- </li> -->
+        <!-- </ul> -->
+        <!-- </div> -->
+        <!-- <div class="col-md-6 col-sm-12 formation-img"> -->
+        <!-- <img src="{%static 'assets/images/service/cg3.jpg'%}"> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
+</section>
+<!--section formation-->
+{%endblock%}

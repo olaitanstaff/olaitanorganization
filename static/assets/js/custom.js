@@ -153,4 +153,48 @@ $(document).ready(function(){
         });
 		
 });	
+
+
+//fomation
+let lt = document.querySelector(".formationLi")
+
+	lt.addEventListener('mouseout', (ev) => {
+	const lst = ev.target
+	// console.log(lst)
+	lst.firstChild.style.color = "#6967d1"
+	}, false)
+
+
+	lt.addEventListener('mouseover', (ev) => {
+	const lst = ev.target;
+	lst.firstChild.style.color = "red"
+	// console.log(lst)
+	}, false)
+
+
+
+
+// consiel de gestion
+let formationLiCG = document.querySelector(".formationLiCG")
 	
+	formationLiCG.addEventListener('mouseout', (ev) => {
+	const lstLiCG = ev.target
+	// console.log(lst)
+	lstLiCG.firstChild.style.color = "#6967d1"
+	}, false)
+
+	formationLiCG.addEventListener('mouseover', (ev) => {
+	const lstLiCG = ev.target;
+	lstLiCG.firstChild.style.color = "red"
+	// console.log(lst)
+	}, false)
+
+
+
+
+
+
+
+
+
+

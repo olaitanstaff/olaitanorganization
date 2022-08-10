@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 
 from pathlib import Path
+from pickle import FALSE
 import django_heroku
 from decouple import config
 
@@ -25,10 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-kwba%$sa87m!*jcaoicbrp_dx-8jo@f$9*#*w(5ag66y!iwaec'
+# SECRET_KEY = 'django-insecure-kwba%$sa87m!*jcaoicbrp_dx-8jo@f$9*#*w(5ag66y!iwaec'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = FALSE
 
 ALLOWED_HOSTS = []
 
@@ -55,7 +56,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
-    
+
 ]
 
 ROOT_URLCONF = 'olaitanorganization.urls'
@@ -127,13 +128,13 @@ USE_TZ = True
 STATIC_URL = "/static/"
 # MEDIA_URL = "/media/"
 # MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-STATICFILES_DIRS = [BASE_DIR / "static"]  
-STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles" 
-STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage" 
+STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
-# 
-# STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles" 
+#
+# STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles"
 # STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # Default primary key field type

@@ -31,7 +31,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = FALSE
 
-ALLOWED_HOSTS = ['wwww.olaitanorganization.com', 'olaitanorganization.com']
+ALLOWED_HOSTS = ['olaitanorganization.herokuapp.com',
+                 'wwww.olaitanorganization.com', 'olaitanorganization.com']
 
 
 # Application definition

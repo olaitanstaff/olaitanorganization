@@ -9,6 +9,8 @@ from django.http import HttpResponse
 
 constactNumber = "+212 623011 384"
 mail = "olaitanorganization@gmail.com"
+facebookUlr = "https://www.facebook.com/OLaitanBusinessAttitude"
+linkedINUrl = ""
 
 
 def index(request):

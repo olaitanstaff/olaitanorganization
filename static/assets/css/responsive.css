@@ -117,7 +117,9 @@
 	}
 	.project-btn {
 	position: relative;
-	bottom: 15px;
+	top: 20px;
+	
+	/* bottom: 15px; */
 	}
 
 }/*max-width:991px*/

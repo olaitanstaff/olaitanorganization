@@ -10,15 +10,15 @@
 		</ol>
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
-			<div class="item active">
+			<div class="item">
 				<div class="single-slide-item slide-1">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="single-slide-item-content">
 									<h2>
-										Consultez Votre <br />
-										Business Avec Nous
+										Développement Web/<br />
+										E-commerce
 									</h2>
 									<p>
 										Nous sommes une entreprise pleine de productivité, de
@@ -42,9 +42,45 @@
 				</div>
 				<!-- /.single-slide-item-->
 			</div>
+
 			<!-- /.item .active-->
 			<div class="item">
 				<div class="single-slide-item slide-2">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="single-slide-item-content">
+									<h2>
+										Formation Professionnel<br />
+										Scolaire et Personnel
+									</h2>
+									<p>
+										Notre politique de conduite des affaires est en fait le
+										guide global et pratique pour faire des affaires au sein de
+										l'Organisation Olaitan et il nous appartient- tous les
+										rôles, tous les niveaux et partout où nous opérons - de la
+										connaître et de la vivre chaque jour au sein d'Olaitan.
+									</p>
+									<button type="button" class="slide-btn">get started</button>
+									<button type="button" class="slide-btn">
+										<a href="{% url 'app1:service'%}">savoir plus</a>
+									</button>
+								</div>
+								<!-- /.single-slide-item-content-->
+							</div>
+							<!-- /.col-->
+						</div>
+						<!-- /.row-->
+					</div>
+					<!-- /.container-->
+				</div>
+				<!-- /.single-slide-item-->
+			</div>
+			<!-- /.item .active-->
+
+			<!-- /.item .active-->
+			<div class="item">
+				<div class="single-slide-item slide-3">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-12">
@@ -61,7 +97,75 @@
 										connaître et de la vivre chaque jour au sein d'Olaitan.
 									</p>
 									<button type="button" class="slide-btn">get started</button>
-									<button type="button" class="slide-btn" style="background:transparent">
+									<button type="button" class="slide-btn">
+										<a href="{% url 'app1:service'%}">savoir plus</a>
+									</button>
+								</div>
+								<!-- /.single-slide-item-content-->
+							</div>
+							<!-- /.col-->
+						</div>
+						<!-- /.row-->
+					</div>
+					<!-- /.container-->
+				</div>
+				<!-- /.single-slide-item-->
+			</div>
+			<!-- /.item .active-->
+			<!-- /.item .active-->
+			<div class="item">
+				<div class="single-slide-item slide-4">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="single-slide-item-content">
+									<h2>
+										Consultez Votre <br />
+										Business Avec Nous
+									</h2>
+									<p>
+										Notre politique de conduite des affaires est en fait le
+										guide global et pratique pour faire des affaires au sein de
+										l'Organisation Olaitan et il nous appartient- tous les
+										rôles, tous les niveaux et partout où nous opérons - de la
+										connaître et de la vivre chaque jour au sein d'Olaitan.
+									</p>
+									<button type="button" class="slide-btn">get started</button>
+									<button type="button" class="slide-btn">
+										<a href="{% url 'app1:service'%}">savoir plus</a>
+									</button>
+								</div>
+								<!-- /.single-slide-item-content-->
+							</div>
+							<!-- /.col-->
+						</div>
+						<!-- /.row-->
+					</div>
+					<!-- /.container-->
+				</div>
+				<!-- /.single-slide-item-->
+			</div>
+			<!-- /.item .active-->
+			<!-- /.item .active-->
+			<div class="item active">
+				<div class="single-slide-item slide-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="single-slide-item-content">
+									<h2>
+										Business Plan/<br />
+										Business Model
+									</h2>
+									<p>
+										Notre politique de conduite des affaires est en fait le
+										guide global et pratique pour faire des affaires au sein de
+										l'Organisation Olaitan et il nous appartient- tous les
+										rôles, tous les niveaux et partout où nous opérons - de la
+										connaître et de la vivre chaque jour au sein d'Olaitan.
+									</p>
+									<button type="button" class="slide-btn">get started</button>
+									<button type="button" class="slide-btn">
 										<a href="{% url 'app1:service'%}">savoir plus</a>
 									</button>
 								</div>
@@ -96,6 +200,10 @@
 	<div class="row">
 		<div class="col-md-4 about-ceo-img">
 			<img class="img-resposive" src="{%static 'assets/images/about/ceo.jpeg'%}" alt="about-ceo-images" />
+			<p style="text-transform: none; margin-top: 5px">
+				<span class="name">Timothy O. J. SOSSA</span>
+			</p>
+			<span style="text-transform:capitalize" class="ceo">C.E.O de Olaitan Organization</span>
 		</div>
 		<!--/.about-ceo-img-->
 		<div class="col-md-8 about-ceo-text">
@@ -125,9 +233,6 @@
 				Bienvenus à OLaitan Organization, l'endroit où toutes vos impossibilités
 				sont tranformées en possibilités.
 			</p>
-			<p style="text-tranform: none; margin-top: 5px">
-				<span class="name">Timothy O. J. SOSSA</span>
-			</p>
 		</div>
 		<!--/ ceo text -->
 	</div>
@@ -138,7 +243,7 @@
 
 <!--Word of CEO Message start -->
 <!--about-us start -->
-<section class="container-fluid about-ceo">
+<section style="margin-bottom: 30px;" class="container-fluid about-ceo">
 	<div class="row">
 		<div class="col-md-8 about-ceo-text">
 			<h2 class="mb-sm-0">Notre histoire</h2>
